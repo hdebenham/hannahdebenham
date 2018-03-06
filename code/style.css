@@ -1,0 +1,105 @@
+/*** Grid ***/
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.group:before, .group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.col-1:first-child, .col-2:first-child, .col-3:first-child, .col-4:first-child, .col-5:first-child, .col-6:first-child, .col-7:first-child, .col-8:first-child, .col-9:first-child, .col-10:first-child, .col-11:first-child, .col-12:first-child {
+    margin-left: 0;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-11 {
+    width: 91.53%;
+    margin-left: 1.6%;
+}
+
+.col-10 {
+    width: 83.06%;
+    margin-left: 1.6%;
+}
+
+.col-9 {
+    width: 74.6%;
+    margin-left: 1.6%;
+}
+
+.col-8 {
+    width: 66.13%;
+    margin-left: 1.6%;
+}
+
+.col-7 {
+    width: 57.66%;
+    margin-left: 1.6%;
+}
+
+.col-6 {
+    width: 49.2%;
+    margin-left: 1.6%;
+}
+
+.col-5 {
+    width: 40.73%;
+    margin-left: 1.6%;
+}
+
+.col-4 {
+    width: 32.26%;
+    margin-left: 1.6%;
+}
+
+.col-3 {
+    width: 23.8%;
+    margin-left: 1.6%;
+}
+
+.col-2 {
+    width: 15.33%;
+    margin-left: 1.6%;
+}
+
+.col-1 {
+    width: 6.866%;
+    margin-left: 1.6%;
+}
+
+/*** End grid ***/
+/*** header ***/
+.background {
+    background-color: red;
+    height: 600px;
+    float: right;
+    z-index: -1;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 6em;
+    position: absolute;
+    line-height: 1em;   
+}
+
+header p {
+    margin-left: 23.8%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 1.6em;
+    position: absolute;
+    
+}
