@@ -80,7 +80,7 @@
 /*** End grid ***/
 /*** header ***/
 .background-head {
-    background-color: red;
+    background-color: #d9d9d9;
     margin: 50px 0 0 0;
     height: 600px;
     float: right;
@@ -103,24 +103,25 @@ header div p#intro {
 }
 
 header div.background-head ul{
-    margin-left: 15.33%;
+    margin: 25px 0 0 15.33%;
+    
 }
 
 header div.background-head ul li {
     list-style-type: none;
     display: inline-block;
-    height: 30px;
+    height: 40px;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
     font-weight: 400;
-    line-height:1.5;
+    line-height:2.25;
     background-color: gray;
     padding-left: 2px;
 }
 
 .border {
     height: 10px;
-    background-color: blue;
+    background-color: #999;
     float: right;
 }
 
@@ -129,7 +130,47 @@ header div.background-head ul li {
     height: 610px;
     margin: 50px 0 0 6.866%;
     float: left;
-    background-color: yellow;
+    background-color: #bfbfbf;
 }
+
+/*** End header ***/
+
+h3 {
+    font-family:'Poppins', sans-serif;
+    font-size: 2.5em;
+    line-height: .8em;
+}
+
+img {
+    width: 100%;
+}
+
+.title-bar {
+    height: 75px;
+    background-color: #d9d9d9;
+    margin: 150px;
+    float: left;
+}
+
+.about-me .title-bar h3 {
+    float: right;
+    margin-right: 10%;
+}
+
+.headshot {
+    height: 450px;
+    background-color: black;
+    float:left;
+    margin: -175px 0 0 11.9%;
+}
+
+.about-me p {
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25em;
+    line-height: 1.25em;
+}
+
+
 
 
