@@ -79,27 +79,57 @@
 
 /*** End grid ***/
 /*** header ***/
-.background {
+.background-head {
     background-color: red;
+    margin: 50px 0 0 0;
     height: 600px;
     float: right;
     z-index: -1;
-    position: relative;
 }
 
 h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 6em;
-    position: absolute;
-    line-height: 1em;   
+    line-height: 1em; 
+    margin: 50px 0 0 -70px;
 }
 
-header p {
-    margin-left: 23.8%;
+header div p#intro {
+    margin: 20px 0 0 15.33%;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 1.5em;
     line-height: 1.6em;
-    position: absolute;
-    
 }
+
+header div.background-head ul{
+    margin-left: 15.33%;
+}
+
+header div.background-head ul li {
+    list-style-type: none;
+    display: inline-block;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height:1.5;
+    background-color: gray;
+    padding-left: 2px;
+}
+
+.border {
+    height: 10px;
+    background-color: blue;
+    float: right;
+}
+
+.left-nav {
+    width: 30px;
+    height: 610px;
+    margin: 50px 0 0 6.866%;
+    float: left;
+    background-color: yellow;
+}
+
+
