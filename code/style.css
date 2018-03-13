@@ -145,32 +145,114 @@ img {
     width: 100%;
 }
 
-.title-bar {
+.about-me .title-bar {
     height: 75px;
     background-color: #d9d9d9;
-    margin: 150px;
+    margin-top: 150px;
     float: left;
 }
 
 .about-me .title-bar h3 {
     float: right;
-    margin-right: 10%;
+    margin-right: 174px;
 }
 
 .headshot {
     height: 450px;
     background-color: black;
     float:left;
-    margin: -175px 0 0 11.9%;
+    margin: -25px 0 0 11.9%;
 }
 
 .about-me p {
     float: right;
     font-family: 'Roboto', sans-serif;
     font-size: 1.25em;
-    line-height: 1.25em;
+    line-height: 35px;
+    margin: 0 0 25px 0;
+    width: 100%;
+}
+
+.p-wrap {
+    float: right;
+    margin: -73px 6.866% 0 0;
+}
+
+.work .title-bar {
+    height: 75px;
+    background-color: #d9d9d9;
+    margin-top: 150px;
+    float: left;
+}
+
+.work .title-bar h3 {
+    margin-left: 20%;
 }
 
 
+.work ul {
+    clear: both;
+    margin: 0 0 0 40.73%;
+}
 
+.work ul li {
+    list-style-type: none;
+    display: inline-block;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height:2.25;
+    background-color: gray;
+    padding-left: 2px;
+    margin-top: -25px;
+    position: relative;
+}
 
+.case-study h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5em;
+    margin: 50px 0 0 8.2%;
+}
+
+.case-study p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25em;
+    font-weight: 300;
+    line-height: 35px;
+    width: 50%;
+    margin: 0 0 20px 16.98%;
+}
+
+.case-study p.section {
+    font-weight: 500;
+    font-size: 1.5em
+}
+
+.case-study p.quote {
+    margin-left: 20%;
+    font-style: italic;
+}
+
+/*** images ***/
+
+img {
+    width: 100%;
+}
+
+.right {
+    float: right;
+    padding: 10px 0 10px 10px;
+}
+
+.left {
+    float: left;
+}
+
+.full {
+    width: 100%;
+}
+
+.half {
+    width: 60%;
+}
