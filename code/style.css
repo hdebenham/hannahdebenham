@@ -135,6 +135,16 @@ header div.background-head ul li {
 
 /*** End header ***/
 
+p a {
+    text-decoration: none;
+    color: black;
+    background-color: #d9d9d9;
+}
+
+p a:hover {
+    background-color: blue;
+    color: white;
+}
 h3 {
     font-family:'Poppins', sans-serif;
     font-size: 2.5em;
@@ -234,10 +244,57 @@ img {
     font-style: italic;
 }
 
+.stat {
+    width: 24%;
+    float: left;
+    margin-left: 1%;
+    
+}
+
+.stat h4 {
+    font-family: 'poppins', sans-serif;
+    font-size: 4em;
+    line-height: 0;
+    width: 100%;
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+
+.stat p {
+    font-size: 1em;
+    line-height: 1.5em;
+    width: 100%;
+    margin: 40px 0 0 0;
+    text-align: center;
+}
+
+.persona {
+    width: 50%;
+    margin: 0 0 0 16.98%;
+}
+
+.persona_thumb-1 {
+    width: 25%;
+    float: left;
+    margin: 10px 0 40px 16.98%;
+}
+
+.persona_thumb-2 {
+    width: 25%;
+    float: left;
+    margin: 10px 0 40px 0;
+}
+
 /*** images ***/
 
 img {
     width: 100%;
+}
+
+.img-wrap {
+    width: 50%;
+    margin: 0 0 0 16.98%;
+    
 }
 
 .right {
@@ -255,4 +312,24 @@ img {
 
 .half {
     width: 60%;
+}
+
+.third {
+    width: 32.33%;
+    margin: 40px 0 0 1%;
+}
+.quarter {
+    width: 24%;
+    margin: 40px 0 0 1%;
+}
+
+.center {
+    width: 50%;
+    margin: 0 0 0 16.98%;
+}
+
+.center-left {
+    float: left;
+    width: 50%;
+    margin: 0;
 }
