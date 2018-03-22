@@ -82,7 +82,7 @@
 .background-head {
     background-color: #d9d9d9;
     margin: 50px 0 0 0;
-    height: 600px;
+    padding: 20px 0 50px 0;
     float: right;
     z-index: -1;
 }
@@ -91,7 +91,7 @@ h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 6em;
     line-height: 1em; 
-    margin: 50px 0 0 -70px;
+    margin: 20px 0 0 -70px;
 }
 
 header div p#intro {
@@ -131,6 +131,8 @@ header div.background-head ul li {
     margin: 50px 0 0 6.866%;
     float: left;
     background-color: #bfbfbf;
+    z-index: -1;
+    position: fixed;
 }
 
 /*** End header ***/
@@ -294,7 +296,12 @@ img {
 .img-wrap {
     width: 50%;
     margin: 0 0 0 16.98%;
-    
+    overflow: hidden;
+}
+
+.img-wrap-center {
+    width: 80%;
+    margin: 0 10% 0 10%;
 }
 
 .right {
@@ -316,7 +323,7 @@ img {
 
 .third {
     width: 32.33%;
-    margin: 40px 0 0 1%;
+    margin: 40px 0 40px .75%;
 }
 .quarter {
     width: 24%;
@@ -330,6 +337,191 @@ img {
 
 .center-left {
     float: left;
-    width: 50%;
-    margin: 0;
+    width: 45%;
+    margin: 0 5% 40px 0;
+}
+
+/**** Tablet media query ***/
+
+@media only screen and (max-width: 1024px) {
+    h1 {
+        font-size: 5em;
+        margin: 20px 0 0 -60px;
+    }
+    
+    .left-nav {
+        margin: 50px 0 0 4%;
+    }
+    
+    header div p#intro {
+        width: 70%;
+        margin: 20px 4% 0 11%;
+        font-size: 1.25em;
+    }
+    
+    header div.background-head ul{
+        margin: 30px .5% 0 11%;
+    
+    }
+
+    header div.background-head ul li {
+        font-size: 1.25em;
+        margin-bottom: 10px;
+    }
+    
+    .case-study h2 {
+        font-size: 4em;
+        margin-left: 10%;
+    }
+    
+    .case-study p {
+        width: 70%;
+    }
+    
+    .stat-wrap {
+        overflow: hidden;
+        margin-bottom: -220px
+    }
+    
+    .stat {
+        width: 24%;
+    }
+
+    .stat h4 {
+        font-size: 4em;
+        width: 100%;
+        text-align: center;
+        margin: 40px 0 0 0;
+    }
+
+    .stat p {
+        width: 100%;
+    }
+    
+    .persona {
+        width: 50%;
+        margin: 0 0 0 25%;
+    }
+
+    .persona_thumb-1 {;
+        margin: 10px 0 40px 25%;
+    }
+    
+    .persona_thumb-2 {
+        margin-right: 25%;
+    }
+}
+
+@media only screen and (max-width: 852px) {
+    .stat {
+        width: 40%;
+        margin: 0 5% 5% 5%;
+    }
+}
+
+/**** Phone media query ***/
+@media only screen and (max-width: 667px) {
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+        width: 100%;
+        margin: 0;
+    }
+    
+    h1 {
+        font-size: 3.25em;
+        margin: 20px 0 0 11%;
+    }
+    
+    .left-nav {
+        margin: 0;
+    }
+    
+    .background-head {
+        z-index: -2;
+        position: relative;
+    } 
+    
+    header div p#intro {
+        width: 85%;
+        margin: 20px 4% 0 11%;
+        font-size: 1.25em;
+    }
+    
+    header div.background-head ul{
+    margin: 30px .5% 0 11%;
+    
+    }
+
+    header div.background-head ul li {
+        font-size: 1.25em;
+        margin-bottom: 10px;
+    }
+    
+    .case-study p {
+        width: 85%;
+        margin-left: 15%;
+    }
+    
+    .work .title-bar h3 {
+        margin-left: 15%;
+    }
+    
+    .work ul {
+        clear: both;
+        margin: 0 0 0 0;
+    }
+
+    .work ul li {
+        display: inline-block;
+        width: 25%;
+        margin-right: 5px;
+        position: relative;
+        float: right;
+    }
+    
+    .stat {
+        width: 90%;
+        margin: 0 5% 0 5%;
+    }
+    
+    .stat h4{
+        font-size: 3em;
+    }
+    
+    .stat p {
+        width: 70%;
+        margin: 40px 15% 40px 15%;
+    }
+    
+    /*** images ***/
+    
+    .half {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    
+    .persona {
+        width: 80%;
+        margin-left: 15%
+    }
+    
+    .persona_thumb-1 {
+        width: 40%;
+        margin-left: 15%;
+    }
+    
+    .persona_thumb-2 {
+        width: 40%;
+        margin-right: 0;
+    }
+    
+    .img-wrap {
+        width: 80%;
+        margin-left: 15%
+    }
+    
+    .center-left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
 }
