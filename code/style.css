@@ -135,6 +135,34 @@ header div.background-head ul li {
     position: fixed;
 }
 
+.left-nav-list {
+    margin: 400px 0 0 6%;
+    float: left;
+    position:fixed;
+}
+
+.left-nav-list li {
+    width: 10px;
+    list-style-type: none;
+    display: block;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 2.25;
+    background-color: grey;
+    color: rgba(0,0,0,0);
+    padding-left: 2px;
+    margin-bottom: 10px;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+}
+
+.left-nav-list li:hover {
+    width: 150px;
+    color: black;
+}
+
 /*** End header ***/
 
 p a {
@@ -165,8 +193,7 @@ img {
 }
 
 .about-me .title-bar h3 {
-    float: right;
-    margin-right: 174px;
+    margin-left: 20%;
 }
 
 .headshot {
@@ -353,6 +380,10 @@ img {
         margin: 50px 0 0 4%;
     }
     
+    .left-nav-list {
+        margin-left: 2.8%;
+    }
+    
     header div p#intro {
         width: 70%;
         margin: 20px 4% 0 11%;
@@ -371,7 +402,7 @@ img {
     
     .case-study h2 {
         font-size: 4em;
-        margin-left: 10%;
+        margin-left: 15%;
     }
     
     .case-study p {
@@ -435,6 +466,11 @@ img {
         margin: 0;
     }
     
+    .left-nav-list {
+        margin-left: 30px;
+        padding: 0;
+    }
+    
     .background-head {
         z-index: -2;
         position: relative;
@@ -492,6 +528,12 @@ img {
         margin: 40px 15% 40px 15%;
     }
     
+    .case-study p.quote {
+        width: 75%;
+        margin-left: 15%;
+        font-style: italic;
+    }
+    
     /*** images ***/
     
     .half {
@@ -516,12 +558,25 @@ img {
     
     .img-wrap {
         width: 80%;
-        margin-left: 15%
     }
     
     .center-left {
-        width: 100%;
-        margin-bottom: 20px;
+        width: 85%;
+        margin-left: 5%;
+    }
+    
+    .quarter {
+        width: 40%;
+        margin: 20px 2% 20px 0;
+    }
+    
+    .left-marg {
+        margin-left: 15%;
+    }
+
+    .third {
+        width: 85%;
+        margin: 0 10% 20px 15%;
     }
 
 }
