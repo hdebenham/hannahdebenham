@@ -82,7 +82,8 @@
 .background-head {
     background-color: #d9d9d9;
     margin: 50px 0 0 0;
-    padding: 20px 0 50px 0;
+    padding: 20px 0 75px 0;
+    height: auto;
     float: right;
     z-index: -1;
 }
@@ -92,10 +93,11 @@ h1 {
     font-size: 6em;
     line-height: 1em; 
     margin: 20px 0 0 -70px;
+    padding-bottom: 30px;
 }
 
 header div p#intro {
-    margin: 20px 0 0 15.33%;
+    margin: 40px 0 0 15.33%;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 1.5em;
@@ -104,6 +106,7 @@ header div p#intro {
 
 header div.background-head ul{
     margin: 25px 0 0 15.33%;
+    display: none;
     
 }
 
@@ -136,13 +139,13 @@ header div.background-head ul li {
 }
 
 .left-nav-list {
-    margin: 400px 0 0 6%;
+    margin: 415px 0 0 6%;
     float: left;
     position:fixed;
 }
 
 .left-nav-list li {
-    width: 10px;
+    width: 150px;
     list-style-type: none;
     display: block;
     height: 40px;
@@ -151,17 +154,20 @@ header div.background-head ul li {
     font-weight: 400;
     line-height: 2.25;
     background-color: grey;
-    color: rgba(0,0,0,0);
+    color: rgba(0,0,0,10);
     padding-left: 2px;
     margin-bottom: 10px;
     -webkit-transition: width 1s;
     transition: width 1s;
 }
 
+
+/*
 .left-nav-list li:hover {
-    width: 150px;
-    color: black;
+    /width: 150px;
 }
+*/
+
 
 /*** End header ***/
 
