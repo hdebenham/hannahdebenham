@@ -9,6 +9,7 @@ var ready = function() {
             element.style.width = '10px'
             
             element.innerHTML = "";
+            element.style.transition = 'width 1s';
         }
         
         
@@ -21,18 +22,21 @@ var ready = function() {
         
         var hover1 = function(event) {
             Li1.style.width = '150px';
+            Li1.style.transition = 'width 0s';
             Li1.innerHTML = "Work";
         }
         Li1.addEventListener('mouseover',hover1,false);
         
         var hover2 = function(event) {
             Li2.style.width = '150px';
+            Li2.style.transition = 'width 0s';
             Li2.innerHTML = "About me";
         }
         Li2.addEventListener('mouseover',hover2,false);
         
         var hover3 = function(event) {
             Li3.style.width = '150px';
+            Li3.style.transition = 'width 0s';
             Li3.innerHTML = "Contact";
         }
         Li3.addEventListener('mouseover',hover3,false);
@@ -51,6 +55,8 @@ var ready = function() {
         for(var i = 0; i < 3; i++){
             var element = document.getElementsByClassName('left-list')[i];
             element.style.width = '150px';
+            
+            element.style.transition = 'width 0s';
         }
         
         document.getElementsByClassName('left-list')[0].innerHTML = "Work";
@@ -58,19 +64,17 @@ var ready = function() {
         document.getElementsByClassName('left-list')[2].innerHTML = "Contact";
     }
     
-    var test = function(event){
+    var stickyNav = function(event){
         if(window.scrollY > heroHeight - 415) {
             styleChange();  
             styleHover();
         }
         else {
             styleReverse();
-        }
-        var height = window.scrollY > heroHeight - 415;
-        
+        }        
     }
     
-    window.addEventListener('scroll',test,false);
+    window.addEventListener('scroll',stickyNav,false);
             
 };
 

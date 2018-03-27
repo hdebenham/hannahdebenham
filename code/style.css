@@ -155,7 +155,7 @@ header div.background-head ul li {
     line-height: 2.25;
     background-color: grey;
     color: rgba(0,0,0,10);
-    padding-left: 2px;
+    padding-left: 5px;
     margin-bottom: 10px;
     -webkit-transition: width 1s;
     transition: width 1s;
@@ -181,6 +181,13 @@ p a:hover {
     background-color: blue;
     color: white;
 }
+
+ul li a {
+    color: black;
+}
+
+
+
 h3 {
     font-family:'Poppins', sans-serif;
     font-size: 2.5em;
@@ -257,7 +264,7 @@ img {
 .case-study h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 5em;
-    margin: 50px 0 0 8.2%;
+    margin: 50px 0 0 13%;
 }
 
 .case-study p {
@@ -271,7 +278,8 @@ img {
 
 .case-study p.section {
     font-weight: 500;
-    font-size: 1.5em
+    font-size: 1.5em;
+    border-bottom: solid black 4px;
 }
 
 .case-study p.quote {
@@ -320,6 +328,38 @@ img {
     margin: 10px 0 40px 0;
 }
 
+/*** Tique colors ***/
+
+.color-wrap {
+    width: 100px;
+    margin: 0 3.33% 40px 0;
+    float: left;
+}
+
+.color {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 5%;
+}
+
+.sub-color {
+    width: 30px;
+    height: 30px;
+    margin: 0 0 10px 2.3px;
+    float: left;
+    border-radius: 10%;
+}
+
+.color p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 00;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    padding: 30px 0 0 0;
+    margin-left: 15%;
+}
 /*** images ***/
 
 img {
@@ -327,6 +367,12 @@ img {
 }
 
 .img-wrap {
+    width: 50%;
+    margin: 0 0 0 16.98%;
+    overflow: hidden;
+}
+
+.img-wrap2 {
     width: 50%;
     margin: 0 0 0 16.98%;
     overflow: hidden;
@@ -359,8 +405,8 @@ img {
     margin: 40px 0 40px .75%;
 }
 .quarter {
-    width: 24%;
-    margin: 40px 0 0 1%;
+    width: 45%;
+    margin: 40px 5% 0 0;
 }
 
 .center {
@@ -392,7 +438,7 @@ img {
     
     header div p#intro {
         width: 70%;
-        margin: 20px 4% 0 11%;
+        margin: 20px 4% 0 20%;
         font-size: 1.25em;
     }
     
@@ -447,12 +493,20 @@ img {
     .persona_thumb-2 {
         margin-right: 25%;
     }
+    
+    .color-wrap {
+        margin: 0 10% 10px 13%;
+    }
 }
 
 @media only screen and (max-width: 852px) {
     .stat {
         width: 40%;
         margin: 0 5% 5% 5%;
+    }
+    
+    .color-wrap {
+        margin: 0 5% 10px 10%;
     }
 }
 
@@ -566,6 +620,10 @@ img {
         width: 80%;
     }
     
+    .img-wrap2 {
+        width: 80%;
+    }
+    
     .center-left {
         width: 85%;
         margin-left: 5%;
@@ -573,16 +631,20 @@ img {
     
     .quarter {
         width: 40%;
-        margin: 20px 2% 20px 0;
-    }
-    
-    .left-marg {
-        margin-left: 15%;
+        margin: 40px 5% 0 0;
     }
 
     .third {
         width: 85%;
         margin: 0 10% 20px 15%;
+    }
+    
+    .center {
+        width: 80%;
+    }
+    
+    .color-wrap {
+        margin: 0 1% 10px 8.5%;
     }
 
 }
