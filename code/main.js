@@ -15,40 +15,55 @@ var ready = function() {
         
     }
     
-    var styleHover = function() {
-        var Li1 = document.getElementsByClassName('left-list')[0];
+    var Li1 = document.getElementsByClassName('left-list')[0];
         var Li2 = document.getElementsByClassName('left-list')[1];
         var Li3 = document.getElementsByClassName('left-list')[2];
-        
-        var hover1 = function(event) {
+    
+    var hover1 = function(event) {
             Li1.style.width = '150px';
             Li1.style.transition = 'width 0s';
             Li1.innerHTML = "Work";
         }
-        Li1.addEventListener('mouseover',hover1,false);
-        
-        var hover2 = function(event) {
+    
+    var hover2 = function(event) {
             Li2.style.width = '150px';
             Li2.style.transition = 'width 0s';
             Li2.innerHTML = "About me";
         }
-        Li2.addEventListener('mouseover',hover2,false);
-        
-        var hover3 = function(event) {
+    
+    var hover3 = function(event) {
             Li3.style.width = '150px';
             Li3.style.transition = 'width 0s';
             Li3.innerHTML = "Contact";
         }
-        Li3.addEventListener('mouseover',hover3,false);
-        
-        var hoverOff = function(event) {
+    
+    var hoverOff = function(event) {
             this.style.width = '10px';
             this.innerHTML = "";
         }
+
+    var styleHover = function() {
+        
+        Li1.addEventListener('mouseover',hover1,false);
+        
+        Li2.addEventListener('mouseover',hover2,false);
+        
+        Li3.addEventListener('mouseover',hover3,false);
         
         Li1.addEventListener('mouseout',hoverOff,false);
         Li2.addEventListener('mouseout',hoverOff,false);
         Li3.addEventListener('mouseout',hoverOff,false);
+    }
+    
+    var styleRemoveHover = function () {
+        Li1.removeEventListener('mouseover',hover1,false);
+        Li2.removeEventListener('mouseover',hover2,false);
+        
+        Li3.removeEventListener('mouseover',hover3,false);
+        
+        Li1.removeEventListener('mouseout',hoverOff,false);
+        Li2.removeEventListener('mouseout',hoverOff,false);
+        Li3.removeEventListener('mouseout',hoverOff,false);
     }
     
     var styleReverse = function() {
@@ -71,10 +86,31 @@ var ready = function() {
         }
         else {
             styleReverse();
+            styleRemoveHover();
         }        
-    }
+    };
     
     window.addEventListener('scroll',stickyNav,false);
+    
+    var workLink = function(){
+        var work = document.getElementsByClassName('case-study')[0];
+        var pos = 0;
+        pos += work.offsetTop - work.scrollTop + work.clientTop - 150;
+        
+        window.scrollTo(0, pos);
+    };
+    
+    Li1.addEventListener('click',workLink,false);
+    
+    var aboutMeLink = function(){
+        var aboutMe = document.getElementById('about-me-id');
+        var pos = 0;
+        pos += aboutMe.offsetTop - aboutMe.scrollTop + aboutMe.clientTop - 150;
+        
+        window.scrollTo(0, pos);
+    };
+    
+    Li2.addEventListener('click',aboutMeLink,false);
             
 };
 
