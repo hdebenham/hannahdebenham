@@ -21,18 +21,21 @@ var ready = function() {
     
     var hover1 = function(event) {
             Li1.style.width = '150px';
+            Li1.style.cursor = 'pointer';
             Li1.style.transition = 'width 0s';
             Li1.innerHTML = "Work";
         }
     
     var hover2 = function(event) {
             Li2.style.width = '150px';
+            Li2.style.cursor = 'pointer';
             Li2.style.transition = 'width 0s';
             Li2.innerHTML = "About me";
         }
     
     var hover3 = function(event) {
             Li3.style.width = '150px';
+            Li3.style.cursor = 'pointer';
             Li3.style.transition = 'width 0s';
             Li3.innerHTML = "Contact";
         }
@@ -92,12 +95,30 @@ var ready = function() {
     
     window.addEventListener('scroll',stickyNav,false);
     
+    var marginY = 0;
+    var speed = 5;
+    var scroller = null;
+    var pos = 0;
+    
     var workLink = function(){
         var work = document.getElementsByClassName('case-study')[0];
-        var pos = 0;
         pos += work.offsetTop - work.scrollTop + work.clientTop - 150;
         
-        window.scrollTo(0, pos);
+        var initScroll = function(pos){
+            
+            scroller = setTimeout(function(){
+                initScroll(pos);
+            }, 1);
+            
+            marginY += speed;
+            
+            if(marginY >= pos){
+                clearTimeout(scroller);
+            }
+            console.log(pos);
+            window.scrollTo(0, pos);
+        };
+
     };
     
     Li1.addEventListener('click',workLink,false);
@@ -105,7 +126,7 @@ var ready = function() {
     var aboutMeLink = function(){
         var aboutMe = document.getElementById('about-me-id');
         var pos = 0;
-        pos += aboutMe.offsetTop - aboutMe.scrollTop + aboutMe.clientTop - 150;
+        pos += aboutMe.offsetTop - aboutMe.scrollTop + aboutMe.clientTop;
         
         window.scrollTo(0, pos);
     };

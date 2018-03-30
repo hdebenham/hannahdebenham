@@ -212,22 +212,18 @@ img {
 .headshot {
     height: 450px;
     background-color: black;
-    float:left;
-    margin: -25px 0 0 11.9%;
+    float:right;
+    padding: 5px 0 5px 5px;
+    width: 45%;
 }
 
 .about-me p {
-    float: right;
     font-family: 'Roboto', sans-serif;
     font-size: 1.25em;
+    font-weight: 300;
     line-height: 35px;
-    margin: 0 0 25px 0;
-    width: 100%;
-}
-
-.p-wrap {
-    float: right;
-    margin: -73px 6.866% 0 0;
+    width: 50%;
+    margin: 0 0 20px 16.98%;
 }
 
 
@@ -458,7 +454,11 @@ img {
         margin-left: 15%;
     }
     
-    .case-study p {
+    .case-study p, {
+        width: 70%;
+    }
+    
+    .about-me p {
         width: 70%;
     }
     
