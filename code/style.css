@@ -162,12 +162,6 @@ header div.background-head ul li {
 }
 
 
-/*
-.left-nav-list li:hover {
-    /width: 150px;
-}
-*/
-
 
 /*** End header ***/
 
@@ -224,6 +218,10 @@ img {
     line-height: 35px;
     width: 50%;
     margin: 0 0 20px 16.98%;
+}
+
+.tique {
+    display: none;
 }
 
 

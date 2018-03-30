@@ -96,18 +96,18 @@ var ready = function() {
     window.addEventListener('scroll',stickyNav,false);
     
     var marginY = 0;
-    var speed = 5;
+    var speed = 3;
     var scroller = null;
     var pos = 0;
     
     var workLink = function(){
-        var work = document.getElementsByClassName('case-study')[0];
-        pos += work.offsetTop - work.scrollTop + work.clientTop - 150;
         
-        var initScroll = function(pos){
+        var initScroll = function(){
+            var work = document.getElementsByClassName('case-study')[1];
+            pos = work.offsetTop - 150;
             
             scroller = setTimeout(function(){
-                initScroll(pos);
+                initScroll();
             }, 1);
             
             marginY += speed;
@@ -115,11 +115,14 @@ var ready = function() {
             if(marginY >= pos){
                 clearTimeout(scroller);
             }
-            console.log(pos);
-            window.scrollTo(0, pos);
+            
+            window.scrollTo(0, marginY);
         };
-
+        
+        initScroll();
+        
     };
+    
     
     Li1.addEventListener('click',workLink,false);
     
