@@ -107,16 +107,29 @@ var ready = function() {
             pos = work.offsetTop - 150;
             
             scroller = setTimeout(function(){
-                initScroll();
-            }, 1);
+                    initScroll();
+                }, 1);
             
-            marginY += speed;
-            
-            if(marginY >= pos){
-                clearTimeout(scroller);
+            if(window.scrollY < pos){
+                
+                marginY += speed;
+
+                if(marginY >= pos){
+                    clearTimeout(scroller);
+                }
+
+                window.scrollTo(0, marginY);
+            } else {
+                
+                marginY = marginY - speed;
+                
+                if(marginY <= pos){
+                    clearTimeout(scroller);
+                }
+                
+                window.scrollTo(0, marginY);
             }
             
-            window.scrollTo(0, marginY);
         };
         
         initScroll();
