@@ -117,7 +117,6 @@ var ready = function() {
                 if(marginY >= pos){
                     clearTimeout(scroller);
                 }
-
                 window.scrollTo(0, marginY);
             } else {
                 
@@ -126,10 +125,8 @@ var ready = function() {
                 if(marginY <= pos){
                     clearTimeout(scroller);
                 }
-                
                 window.scrollTo(0, marginY);
             }
-            
         };
         
         initScroll();

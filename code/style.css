@@ -277,7 +277,8 @@ img {
 .case-study p.section {
     font-weight: 500;
     font-size: 1.5em;
-    border-bottom: solid black 4px;
+    padding-bottom: 5px;
+    border-bottom: solid black 10px;
 }
 
 .case-study p.quote {
