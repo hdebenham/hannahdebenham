@@ -95,46 +95,76 @@ var ready = function() {
     
     window.addEventListener('scroll',stickyNav,false);
     
+//    var marginY = 0;
+//    var speed = 3;
+//    var scroller = null;
+//    var pos = 0;
+//    
+        
+//        var initScroll = function(){
+//            var work = document.getElementsByClassName('case-study')[1];
+//            pos = work.offsetTop - 150;
+//            
+//            scroller = setTimeout(function(){
+//                    initScroll();
+//                }, 1);
+//            
+//            if(window.scrollY < pos){
+//                
+//                marginY += speed;
+//
+//                if(marginY >= pos){
+//                    clearTimeout(scroller);
+//                }
+//                window.scrollTo(0, marginY);
+//            } else {
+//                
+//                marginY = marginY - speed;
+//                
+//                if(marginY <= pos){
+//                    clearTimeout(scroller);
+//                }
+//                window.scrollTo(0, marginY);
+//            }
+//        };
+//    
+    
+   // Li1.addEventListener('click',initScroll,false);
+    
     var marginY = 0;
     var speed = 3;
     var scroller = null;
     var pos = 0;
     
-    var workLink = function(){
-        
-        var initScroll = function(){
-            var work = document.getElementsByClassName('case-study')[1];
-            pos = work.offsetTop - 150;
+    var work = document.getElementsByClassName('case-study')[1];    
+    
+    var initScroll = function(element){
             
-            scroller = setTimeout(function(){
-                    initScroll();
-                }, 1);
+        pos = element.offsetTop - 150;
             
-            if(window.scrollY < pos){
+        scroller = setTimeout(function(){
+                initScroll();
+        }, 1);
+            
+        if(window.scrollY < pos){
                 
-                marginY += speed;
+            marginY += speed;
 
-                if(marginY >= pos){
-                    clearTimeout(scroller);
-                }
-                window.scrollTo(0, marginY);
-            } else {
-                
-                marginY = marginY - speed;
-                
-                if(marginY <= pos){
-                    clearTimeout(scroller);
-                }
-                window.scrollTo(0, marginY);
+            if(marginY >= pos){
+                clearTimeout(scroller);
+            }
+            window.scrollTo(0, marginY);
+        } else {
+            marginY = marginY - speed;
+            if(marginY <= pos){
+                clearTimeout(scroller);
+            }
+            window.scrollTo(0, marginY);
             }
         };
-        
-        initScroll();
-        
-    };
     
     
-    Li1.addEventListener('click',workLink,false);
+    Li1.addEventListener('click',initScroll,false);
     
     var aboutMeLink = function(){
         var aboutMe = document.getElementById('about-me-id');

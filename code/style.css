@@ -198,7 +198,7 @@ img {
 .about-me .title-bar {
     height: 75px;
     background-color: #d9d9d9;
-    margin-top: 150px;
+    margin: 100px 10% 40px 0;;
     float: left;
 }
 
@@ -365,6 +365,20 @@ img {
     width: 100%;
 }
 
+.overview_img {
+    width: 85%;
+    margin: -10px 0 20px 15%;
+}
+
+.img_flow {
+    width: 80%;
+    margin: 0 0 20px 16.98%;
+}
+
+.logo_img {
+    width: 30%;
+    margin: 20px 0 20px 16.98%;
+}
 .img-wrap {
     width: 50%;
     margin: 0 0 0 16.98%;
@@ -377,14 +391,27 @@ img {
     overflow: hidden;
 }
 
+.img-wrap3 {
+    width: 80%;
+    margin:0 0 40px 16.98%;
+    overflow: hidden;
+}
+
 .img-wrap-center {
     width: 80%;
     margin: 0 10% 0 10%;
+    overflow: hidden;
 }
 
 .right {
     float: right;
     padding: 10px 0 10px 10px;
+}
+
+.half-left {
+    width: 40%;
+    margin-right: 1%;
+    float: left;
 }
 
 .left {
@@ -456,7 +483,7 @@ img {
         margin-left: 15%;
     }
     
-    .case-study p, {
+    .case-study p {
         width: 70%;
     }
     
@@ -499,6 +526,10 @@ img {
     
     .color-wrap {
         margin: 0 10% 10px 13%;
+    }
+    
+    .logo_img {
+        width: 40%;
     }
 }
 
@@ -619,6 +650,10 @@ img {
         margin-right: 0;
     }
     
+    .logo_img {
+        width: 80%;
+    }
+    
     .img-wrap {
         width: 80%;
     }
@@ -630,6 +665,11 @@ img {
     .center-left {
         width: 85%;
         margin-left: 5%;
+    }
+    
+    .half-left {
+        width: 85%;
+        margin: 5%;
     }
     
     .quarter {

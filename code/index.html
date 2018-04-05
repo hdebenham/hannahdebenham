@@ -16,10 +16,18 @@
 <div class="container group">
     <div class="left-nav">
     </div>
+<!--
     <ul class="left-nav-list">
         <li class="left-list">Work</li>
         <li class="left-list">About me</li>
         <li class="left-list"><a><div>Contact</div></a></li>
+    </ul>
+-->
+    
+    <ul class="left-nav-list">
+        <li class="left-list"><a href="#work-id">Work</a></li>
+        <li class="left-list"><a href="#about-me-id">About me</a></li>
+        <li class="left-list"><a href="">Contact</a></li>
     </ul>
     <header>
         <div class="col-10 background-head">                                 <h1>Hannah<br>Victoria<br>Debenham</h1>
@@ -28,7 +36,7 @@
         </div>
         <div class="col-10 border"></div>
     </header>
-    <section class="work" id="work-id">
+    <section class="work">
         <div class="col-10 title-bar">
             <h3>Work</h3>
         </div>
@@ -36,8 +44,11 @@
             <li class="col-3"><a><div>Tique</div></a></li>
             <li class="col-3"><a><div>Noted</div></a></li>
         </ul>
-        <div class="case-study tique">
+        <div class="case-study tique" id="work-id">
             <h2>Tique</h2>
+            
+            <div class="overview_img"><img src="../imgs/tique_overview.png"></div>
+
             
             <p class="section">A bit of background</p> 
             
@@ -264,6 +275,8 @@
         <div class="case-study noted">
             <h2>Noted</h2>
             
+            <div class="overview_img"><img src="../imgs/noted/Noted_overview.png"></div>
+            
             <p class="section">A bit of background</p> 
             
             <p>As a project through Bloc, I was assigned to research, design and develop an online application that would allow users to save links, notes and images from the web.
@@ -271,7 +284,7 @@
             
             <p>When I first began working on this project, I though about how I would want the information displayed if I were the user. Links, notes and images all work differently on different scales. So, that mean't the site needed to be dynamic iin viewing options.</p>
             
-            <div class="half right"><img src="../imgs/laptop_tique_3x.png"></div>
+<!--            <div class="half right"><img src="../imgs/laptop_tique_3x.png"></div>-->
             
             <p class="section">So, what's the problem?</p>
             
@@ -346,144 +359,105 @@
             
             <p>So, who are the users? I used the responses from the survey and created personas to better understand the users.</p>
             
-            <div class="persona"><img src="../imgs/Personas-01.png"></div>
-            <div class="persona_thumb-1"><img src="../imgs/Personas-02.png"></div>
-            <div class="persona_thumb-2"><img src="../imgs/Personas-03.png"></div>
+            <div class="persona"><img src="../imgs/noted/blocbox-personas-01.png"></div>
+            <div class="persona_thumb-1"><img src="../imgs/noted/blocbox-personas-02.png"></div>
+            <div class="persona_thumb-2"><img src="../imgs/noted/blocbox-personas-03.png"></div>
             
             <p class="section">Don't users already have a lot of options?</p>
             
-            <p>After determining the users, I researched the competition. The three main competitors I analyized were Amazon, Pinterest and Etsy.</p>
+            <p>After determining the users, I researched the competition. The three main competitors I analyized were Box, Evernote and Google Drive.</p>
             
-            <p>Amazon has a lot to look at and a lot to buy. However, even with extensive navigation, the site can appear cluttered. Pinterest, on the opposite end of the spectrum, has a really clean design but not much functionality as you are unable to purchase products from the site.</p>
+            <p>Box is a cloud-based storage product that focuses on its business clients. Box also puts an emphasis on file sharing, rather than storing small bits of information. Evernote is a note-taking platform, similar to what Noted will be. However, from the homepage it is unclear what the Evernote platform actually looks like and offers.</p>
             
-            <p>Etsy has a cleaner design than Amazon and the ability to purchase from the site, unlike Pinterest. The site promotes small businesses and individual creators, so that means there is no streamlined checkout process, which hinders usability. Read full competitive analysis <a href="https://docs.google.com/document/d/14Sc5pCuK7MM7zh2E1NOTfOMuAtDtikcLtIXSGXcu4_Q/edit?usp=sharing" target="_blank">here.</a> </p>
+            <p>Google Drive is the most popular of the competitors I researched. Google Drive files are saved similarly to how a file is saved on a computer, thus reducing any learnging curve.<a href="https://docs.google.com/document/d/1mMPSyZCOo4UGvFSyp1pYYHp1m2tY6OfbAN8JPdLejBM/edit?usp=sharing" target="_blank">here.</a> </p>
             
-            <p class="section">So, it's called Tique</p>
+            <p class="section">Welcome to Noted.</p>
             
-            <div class="img-wrap">
-                <div class="center-left"><img src="../imgs/branding-name.JPG"></div>
-
-                <div class="center-left"><img src="../imgs/branding-logo.JPG"></div>
-            </div>
+            <p>Before designing the mockups, I mapped out how a user would find their way around Noted. Then, I developed a brand identity for Noted.</p>
+            
+            <div class="img_flow"><img src="../imgs/noted/User_Flow_Diagrams.png"></div>
             
             <div class="img-wrap" style="margin-bottom:40px;">
                 <div class="color-wrap">
-                    <div class="color" style="background-color:#96858f;">
-                        <p>#96858F</p>
+                    <div class="color" style="background-color:#DE4800;">
+                        <p>#DE4800</p>
                     </div>
-                    <div class="sub-color" style="background-color:rgba(150,133,143,.80);"></div>
-                    <div class="sub-color" style="background-color:rgba(150,133,143,.60)"></div>
-                    <div class="sub-color" style="background-color:rgba(150,133,143,.20)"></div>
                 </div>
                 
                 <div class="color-wrap">
-                    <div class="color" style="background-color:#985e6d;">
-                        <p>#985E6D</p>
+                    <div class="color" style="background-color:#f25e38;">
+                        <p>#F25E38</p>
                     </div>
-                    <div class="sub-color" style="background-color:rgba(152,94,109,.80)"></div>
-                    <div class="sub-color" style="background-color:rgba(152,94,109,.60)"></div>
-                    <div class="sub-color" style="background-color:rgba(152,94,109,.20)"></div>
                 </div>
                 
                 <div class="color-wrap">
-                    <div class="color" style="background-color:#49aed0;">
-                        <p>#49AED0</p>
+                    <div class="color" style="background-color:#571a7a;">
+                        <p>#571A7A</p>
                     </div>
-                    <div class="sub-color" style="background-color:rgba(73,174,208,.80)"></div>
-                    <div class="sub-color" style="background-color:rgba(73,174,208,.60)"></div>
-                    <div class="sub-color" style="background-color:rgba(73,174,208,.20)"></div>
                 </div>
                 
                 <div class="color-wrap">
-                    <div class="color" style="background-color:#76728c">
-                        <p>#76728C</p>
+                    <div class="color" style="background-color:#e5dbd8">
+                        <p>#E5DbD8</p>
                     </div>
-                    <div class="sub-color" style="background-color:rgba(118,114,140,.80)"></div>
-                    <div class="sub-color" style="background-color:rgba(118,114,140,.60)"></div>
-                    <div class="sub-color" style="background-color:rgba(118,114,140,.20)"></div>
                 </div>
             
             </div>
             
+            <div class="logo_img"><img src="../imgs/noted/logo_1.png"></div>
+            <div class="logo_img"><img src="../imgs/noted/logo_2.png"></div>
+            <div class="logo_img"><img src="../imgs/noted/logo_3.png"></div>
             
-            <p class="section">The Card: the answer to all my problems</p>
+            <p class="section">Information is key</p>
             
-            <p>In order to achieve an in-store feel online, I developed user flows that would allow users to add items to their bag, or save an item, in one click.</p>
+            <p>For the homepage of Noted, I wanted to give users plenty of information about what the product offered. User testing the wireframes also showed that users better understood how to use the dashboard after reading through the homepage.</p>
             
-            <div class="center"><img src="../imgs/flowchart-cart.png"></div>
-            
-            <div class="img-wrap2">
-                <div class="quarter left-marg left"><img src="../imgs/cart-sketch.JPG"></div>
+            <div class="img-wrap" style="margin-bottom: 40px;">
+                <div class="center-left left-marg left"><img src="../imgs/noted/homepage_wireframe.jpg"></div>
 
-                <div class="quarter left"><img src="../imgs/card-wireframe.png"></div>
-
-                <div class="quarter left-marg left"><img src="../imgs/card_single.png"></div>
-
-                <div class="quarter left"><img src="../imgs/card_multi.png"></div>
+                <div class="center-left left"><img src="../imgs/noted/homepage.jpg"></div>
             </div>
             
-            <p>By packaging each item in it's own card, the products become the focus of the design. I chose a card layout in order to encourage a more browsing-oriented experience. Users are able to make decisions directly from the homefeed, but also have the option to read deeper into the products.</p>
+            <p>Initially, the dashboard was going to be laid out with a card layout structure. However, I decided to go with a design similar to Google Drive because it allowed users to easily read descripitions of each saved note. Users also had more organizational options with this layout.</p>
             
             
-            <div class="img-wrap">
-            <div class="center-left"><img src="../imgs/extended-view-sketch.JPG"></div>
+            <div class="img-wrap3">
+            <div class="half-left "><img src="../imgs/noted/dashboard_wireframe.jpg"></div>
             
-            <div class="center-left"><img src="../imgs/extended-view-wire-1.png"></div>
+            <div class="half-left"><img src="../imgs/noted/Desktop_hd.png"></div>
             </div>
             
             
-            <p>I initially thought I would have a standard description page found on most e commerce sites. However, after designing the card, I wanted the description page to be a cohesive design.  After user testing the wireframes, I found that users preferred to have the essential information higher up on the page. The description page is now an extended view of the card, which also gives related items for users to continue their search.</p>
+            <p>From the dashboard, users can edit and upload notes, links and images.</p>
+            
+            <div class="img-wrap-center">
+                <div class="third left"><img src="../imgs/noted/Notes.png"></div>
+
+                <div class="third left"><img src="../imgs/noted/images_page.png"></div>
+
+                <div class="third left"><img src="../imgs/noted/Image-filled.png"></div>
+            </div>
+            
+            
+            <p>Users can update their Noted plans through the account settings page.</p>
           
             <div class="img-wrap-center">
-                <div class="third left"><img src="../imgs/card_info_layout-wire-2.png"></div>
+                <div class="third left"><img src="../imgs/noted/account_wireframe.jpg"></div>
 
-                <div class="third left"><img src="../imgs/Extended_view.png"></div>
+                <div class="third left"><img src="../imgs/noted/Account_Settings.png"></div>
 
-                <div class="third left"><img src="../imgs/Extended_view_related.png"></div>
+                <div class="third left"><img src="../imgs/noted/Account_Settings_save.png"></div>
             </div>
             
-            <p>With this project, I designed from the inside, out. After designing the card and extended view, I laid out the homefeed. That is what the user would initially see when browsing through products.</p>
+            <p class="section">Feel free to check it out</p>
             
-            <div class="img-wrap-center">
-                <div class="third left"><img src="../imgs/Homefeed2.png"></div>
-
-                <div class="third left"><img src="../imgs/Homefeed3.png"></div>
-
-                <div class="third left"><img src="../imgs/homefeed-final-wireframe.png"></div>
+            <p>You can take the Noted user test here.</p>
+            
+            <p>You can view the live prototype of Noted here.</p>
+            
+            <div>
+                <p>Wasn't Noted great? Well, there's more to see! If you haven't viewed the case study for Tique, then hop to it!</p>
             </div>
-            
-            
-            <p>As a way to encourage browsing, I decided to design the navigation within the flow of the products. This was mean't to reflect how you might find different "shops" within a store.</p>
-            
-            <div class="img-wrap-center">
-                <div class="third left"><img src="../imgs/Homefeed.png"></div>
-
-                <div class="third left"><img src="../imgs/Summer_Lovin.png"></div>
-
-                <div class="third left"><img src="../imgs/My_Likes.png"></div>
-            </div>
-            
-            <p class="section">A dilemma with the card and the cart</p>
-            
-            <p>In my initial usability testing with wireframes, I found that users preferred seeing a similar card layout in the checkout process. </p>
-            
-            <div class="img-wrap">
-                <div class="center-left"><img src="../imgs/cart_A.png"></div>
-                <div class="center-left"><img src="../imgs/cart_B.png"></div>
-            </div>
-            
-            <p>Below, the first design was my first attempt at a cart design. The intention was to not only keep the card design but also the four column layout found on other pages. In user testing though, multiple users responded that the design was awkward to look at. The second attempt still incoporates the card design and opportunities to keep shopping.</p>
-            
-            <div class="img-wrap">
-                <div class="center-left"><img src="../imgs/Checkout_cart.png"></div>
-                <div class="center-left"><img src="../imgs/Checkout_cart_second.png"></div>
-            </div>
-            
-            <p class="section">Well, what now?</p>
-            
-            <p>I'm really happy with how Tique turned out. Based off my initial creative vision and user testing, I think I was able to design a relaxing online shopping experience. </p>
-            
-            <p>If I had more time, I would like to go back and rework the cart design. I'd also actually take the time to build out this design and have a fully working prototype.</p>
         </div>
 
     </section>
