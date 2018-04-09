@@ -94,13 +94,13 @@ var ready = function() {
     };
     
     window.addEventListener('scroll',stickyNav,false);
-    
+//    
 //    var marginY = 0;
 //    var speed = 3;
 //    var scroller = null;
 //    var pos = 0;
 //    
-        
+//        
 //        var initScroll = function(){
 //            var work = document.getElementsByClassName('case-study')[1];
 //            pos = work.offsetTop - 150;
@@ -128,22 +128,30 @@ var ready = function() {
 //            }
 //        };
 //    
-    
-   // Li1.addEventListener('click',initScroll,false);
+//    
+//    Li1.addEventListener('click',initScroll,false);
     
     var marginY = 0;
-    var speed = 3;
+    var speed = 15;
     var scroller = null;
     var pos = 0;
     
     var work = document.getElementsByClassName('case-study')[1];    
     
-    var initScroll = function(element){
+    window.initScroll = function(element){
             
-        pos = element.offsetTop - 150;
+        
+        pos = document.getElementById(element).offsetTop;
+        
+        if(element == "work-id"){
+            pos = pos - 130;
+            speed = 3;
+        }
             
+        console.log(pos + ' destination');
+        
         scroller = setTimeout(function(){
-                initScroll();
+                initScroll(element);
         }, 1);
             
         if(window.scrollY < pos){
@@ -166,15 +174,16 @@ var ready = function() {
     
     Li1.addEventListener('click',initScroll,false);
     
-    var aboutMeLink = function(){
-        var aboutMe = document.getElementById('about-me-id');
-        var pos = 0;
-        pos += aboutMe.offsetTop - aboutMe.scrollTop + aboutMe.clientTop;
-        
-        window.scrollTo(0, pos);
-    };
     
-    Li2.addEventListener('click',aboutMeLink,false);
+//    var aboutMeLink = function(){
+//        var aboutMe = document.getElementById('about-me-id');
+//        var pos = 0;
+//        pos += aboutMe.offsetTop - aboutMe.scrollTop + aboutMe.clientTop;
+//        
+//        window.scrollTo(0, pos);
+//    };
+//    
+//    Li2.addEventListener('click',aboutMeLink,false);
             
 };
 

@@ -14,43 +14,46 @@
     
 <body>
 <div class="container group">
-    <div class="left-nav">
-    </div>
-<!--
-    <ul class="left-nav-list">
-        <li class="left-list">Work</li>
-        <li class="left-list">About me</li>
-        <li class="left-list"><a><div>Contact</div></a></li>
-    </ul>
--->
-    
-    <ul class="left-nav-list">
-        <li class="left-list"><a href="#work-id">Work</a></li>
-        <li class="left-list"><a href="#about-me-id">About me</a></li>
-        <li class="left-list"><a href="">Contact</a></li>
-    </ul>
     <header>
-        <div class="col-10 background-head">                                 <h1>Hannah<br>Victoria<br>Debenham</h1>
-                <p class="col-6" id="intro">Welcome to my portfolio! I’m a designer with a journalism degree who really loves coding. Keep scrolling, or use the nifty navigation to the lefts, to see my work.</p>
+        <div class="left-nav">
+        </div>
     
+<!--
+        <ul class="left-nav-list">
+            <li class="left-list">Work</li>
+            <li class="left-list">About me</li>
+            <li class="left-list"><a><div>Contact</div></a></li>
+        </ul>
+    
+-->
+
+        <ul class="left-nav-list">
+            <li class="left-list"><a onclick="initScroll('work-id'); return false;" href="#">Work</a></li>
+            <li class="left-list"><a onclick="initScroll('about-me-id'); return false;" href="#">About me</a></li>
+            <li class="left-list"><a href="">Contact</a></li>
+        </ul>
+        
+        <div class="col-10 background-head">                                                           <h1>Hannah<br>Victoria<br>Debenham</h1>
+            <p class="col-6" id="intro">Welcome to my portfolio! I’m a designer with a journalism degree who really loves coding. Keep scrolling, or use the nifty navigation to the lefts, to see my work.</p>
+
         </div>
         <div class="col-10 border"></div>
     </header>
     <section class="work">
         <div class="col-10 title-bar">
-            <h3>Work</h3>
+            <h3 id="work-id">Work</h3>
         </div>
         <ul>
             <li class="col-3"><a><div>Tique</div></a></li>
             <li class="col-3"><a><div>Noted</div></a></li>
         </ul>
-        <div class="case-study tique" id="work-id">
+        <div class="case-study tique">
             <h2>Tique</h2>
             
             <div class="overview_img"><img src="../imgs/tique_overview.png"></div>
 
             
-            <p class="section">A bit of background</p> 
+            <p class="section_head">A bit of background</p> 
             
             <p>I started working at a retail clothing store to save money while finishing school. As a sales associate, my number one job is to help the customer. Even in my brief time in retail, I can give you a glimpse at a conversation every sales associate has 50 times during a shift at work:
             </p>
@@ -72,7 +75,7 @@
             <p>The idea for Tique came about for two reasons: 1. You don’t have to work in retail to see that many customers are taking their money and shopping habits online. 2. In my own experiences, I found that browsing online never felt quite as relaxing as walking through a store, just looking. 
             </p>
             
-            <p class="section">So, what's the problem?</p>
+            <p class="section_head">So, what's the problem?</p>
             
             <p>
             - Online retailers are approaching their online customers the same they approach their in-store customers. With help, help and more help.
@@ -84,7 +87,7 @@
             - Just looking is fun and all... but in order for online retailers to survive, customers need to purchase.
             </p>
             
-            <p class="section">What did I do to solve it?</p>
+            <p class="section_head">What did I do to solve it?</p>
             
             <p>
             - User research! I know I said customers want space, but is that actually true...?
@@ -98,7 +101,7 @@
             - Designed mockups
             </p>
             
-            <p class="section">So, who are the users?</p>
+            <p class="section_head">So, who are the users?</p>
             
             <div class="stat-wrap">
                 <div class="stat"><h4>86.3%</h4>
@@ -136,7 +139,7 @@
             <div class="persona_thumb-1"><img src="../imgs/Personas-02.png"></div>
             <div class="persona_thumb-2"><img src="../imgs/Personas-03.png"></div>
             
-            <p class="section">Don't users already have a lot of options?</p>
+            <p class="section_head">Don't users already have a lot of options?</p>
             
             <p>After determining the users, I researched the competition. The three main competitors I analyized were Amazon, Pinterest and Etsy.</p>
             
@@ -144,7 +147,7 @@
             
             <p>Etsy has a cleaner design than Amazon and the ability to purchase from the site, unlike Pinterest. The site promotes small businesses and individual creators, so that means there is no streamlined checkout process, which hinders usability. Read full competitive analysis <a href="https://docs.google.com/document/d/14Sc5pCuK7MM7zh2E1NOTfOMuAtDtikcLtIXSGXcu4_Q/edit?usp=sharing" target="_blank">here.</a> </p>
             
-            <p class="section">So, it's called Tique</p>
+            <p class="section_head">So, it's called Tique</p>
             
             <div class="img-wrap">
                 <div class="center-left"><img src="../imgs/branding-name.JPG"></div>
@@ -192,7 +195,7 @@
             </div>
             
             
-            <p class="section">The Card: the answer to all my problems</p>
+            <p class="section_head">The Card: the answer to all my problems</p>
             
             <p>In order to achieve an in-store feel online, I developed user flows that would allow users to add items to their bag, or save an item, in one click.</p>
             
@@ -249,7 +252,7 @@
                 <div class="third left"><img src="../imgs/My_Likes.png"></div>
             </div>
             
-            <p class="section">A dilemma with the card and the cart</p>
+            <p class="section_head">A dilemma with the card and the cart</p>
             
             <p>In my initial usability testing with wireframes, I found that users preferred seeing a similar card layout in the checkout process. </p>
             
@@ -265,7 +268,7 @@
                 <div class="center-left"><img src="../imgs/Checkout_cart_second.png"></div>
             </div>
             
-            <p class="section">Well, what now?</p>
+            <p class="section_head">Well, what now?</p>
             
             <p>I'm really happy with how Tique turned out. Based off my initial creative vision and user testing, I think I was able to design a relaxing online shopping experience. </p>
             
@@ -277,7 +280,7 @@
             
             <div class="overview_img"><img src="../imgs/noted/Noted_overview.png"></div>
             
-            <p class="section">A bit of background</p> 
+            <p class="section_head">A bit of background</p> 
             
             <p>As a project through Bloc, I was assigned to research, design and develop an online application that would allow users to save links, notes and images from the web.
             </p>
@@ -286,7 +289,7 @@
             
 <!--            <div class="half right"><img src="../imgs/laptop_tique_3x.png"></div>-->
             
-            <p class="section">So, what's the problem?</p>
+            <p class="section_head">So, what's the problem?</p>
             
             <p>
             - Users want to save information found online.
@@ -298,7 +301,7 @@
             - Users want to share information with other users.
             </p>
             
-            <p class="section">What did I do to solve it?</p>
+            <p class="section_head">What did I do to solve it?</p>
             
             <p>
             - User research
@@ -314,7 +317,7 @@
             - Web development    
             </p>
             
-            <p class="section">So, who are the users?</p>
+            <p class="section_head">So, who are the users?</p>
             
             <div class="stat-wrap">
                 <div class="stat"><h4>63.9%</h4>
@@ -363,7 +366,7 @@
             <div class="persona_thumb-1"><img src="../imgs/noted/blocbox-personas-02.png"></div>
             <div class="persona_thumb-2"><img src="../imgs/noted/blocbox-personas-03.png"></div>
             
-            <p class="section">Don't users already have a lot of options?</p>
+            <p class="section_head">Don't users already have a lot of options?</p>
             
             <p>After determining the users, I researched the competition. The three main competitors I analyized were Box, Evernote and Google Drive.</p>
             
@@ -371,7 +374,7 @@
             
             <p>Google Drive is the most popular of the competitors I researched. Google Drive files are saved similarly to how a file is saved on a computer, thus reducing any learnging curve.<a href="https://docs.google.com/document/d/1mMPSyZCOo4UGvFSyp1pYYHp1m2tY6OfbAN8JPdLejBM/edit?usp=sharing" target="_blank">here.</a> </p>
             
-            <p class="section">Welcome to Noted.</p>
+            <p class="section_head">Welcome to Noted.</p>
             
             <p>Before designing the mockups, I mapped out how a user would find their way around Noted. Then, I developed a brand identity for Noted.</p>
             
@@ -408,7 +411,7 @@
             <div class="logo_img"><img src="../imgs/noted/logo_2.png"></div>
             <div class="logo_img"><img src="../imgs/noted/logo_3.png"></div>
             
-            <p class="section">Information is key</p>
+            <p class="section_head">Information is key</p>
             
             <p>For the homepage of Noted, I wanted to give users plenty of information about what the product offered. User testing the wireframes also showed that users better understood how to use the dashboard after reading through the homepage.</p>
             
@@ -449,7 +452,7 @@
                 <div class="third left"><img src="../imgs/noted/Account_Settings_save.png"></div>
             </div>
             
-            <p class="section">Feel free to check it out</p>
+            <p class="section_head">Feel free to check it out</p>
             
             <p>You can take the Noted user test here.</p>
             
