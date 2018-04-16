@@ -94,49 +94,13 @@ var ready = function() {
     };
     
     window.addEventListener('scroll',stickyNav,false);
-//    
-//    var marginY = 0;
-//    var speed = 3;
-//    var scroller = null;
-//    var pos = 0;
-//    
-//        
-//        var initScroll = function(){
-//            var work = document.getElementsByClassName('case-study')[1];
-//            pos = work.offsetTop - 150;
-//            
-//            scroller = setTimeout(function(){
-//                    initScroll();
-//                }, 1);
-//            
-//            if(window.scrollY < pos){
-//                
-//                marginY += speed;
-//
-//                if(marginY >= pos){
-//                    clearTimeout(scroller);
-//                }
-//                window.scrollTo(0, marginY);
-//            } else {
-//                
-//                marginY = marginY - speed;
-//                
-//                if(marginY <= pos){
-//                    clearTimeout(scroller);
-//                }
-//                window.scrollTo(0, marginY);
-//            }
-//        };
-//    
-//    
-//    Li1.addEventListener('click',initScroll,false);
+    
+    var nav = document.getElementsByClassName('left-nav-list')[0];
     
     var marginY = 0;
     var speed = 15;
     var scroller = null;
     var pos = 0;
-    
-    var work = document.getElementsByClassName('case-study')[1];    
     
     window.initScroll = function(element){
             
@@ -168,11 +132,21 @@ var ready = function() {
                 clearTimeout(scroller);
             }
             window.scrollTo(0, marginY);
-            }
-        };
+            console.log('This is catching my click');
+        }
+        return false; 
+    };
+
     
+nav.onclick = function(event) {
+        let target = event.target;
+        
+        var location = target.href;
     
-    Li1.addEventListener('click',initScroll,false);
+        console.log(location);
+        
+        initScroll(location);
+    }
     
     
 //    var aboutMeLink = function(){
