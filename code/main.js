@@ -16,8 +16,8 @@ var ready = function() {
     }
     
     var Li1 = document.getElementsByClassName('left-list')[0];
-        var Li2 = document.getElementsByClassName('left-list')[1];
-        var Li3 = document.getElementsByClassName('left-list')[2];
+    var Li2 = document.getElementsByClassName('left-list')[1];
+    var Li3 = document.getElementsByClassName('left-list')[2];
     
     var hover1 = function(event) {
             Li1.style.width = '150px';
@@ -95,69 +95,24 @@ var ready = function() {
     
     window.addEventListener('scroll',stickyNav,false);
     
-    var nav = document.getElementsByClassName('left-nav-list')[0];
+    var tiqueLink = document.getElementById('click-tique');
+    var tique = document.getElementsByClassName('tique')[0];
     
-    var marginY = 0;
-    var speed = 15;
-    var scroller = null;
-    var pos = 0;
+    var notedLink = document.getElementById('click-noted');
+    var noted = document.getElementsByClassName('noted')[0];
     
-    window.initScroll = function(element){
-            
-        
-        pos = document.getElementById(element).offsetTop;
-        
-        if(element == "work-id"){
-            pos = pos - 130;
-            speed = 3;
-        }
-            
-        console.log(pos + ' destination');
-        
-        scroller = setTimeout(function(){
-                initScroll(element);
-        }, 1);
-            
-        if(window.scrollY < pos){
-                
-            marginY += speed;
-
-            if(marginY >= pos){
-                clearTimeout(scroller);
-            }
-            window.scrollTo(0, marginY);
-        } else {
-            marginY = marginY - speed;
-            if(marginY <= pos){
-                clearTimeout(scroller);
-            }
-            window.scrollTo(0, marginY);
-            console.log('This is catching my click');
-        }
-        return false; 
-    };
-
-    
-nav.onclick = function(event) {
-        let target = event.target;
-        
-        var location = target.href;
-    
-        console.log(location);
-        
-        initScroll(location);
+    var displayTique = function(event) {
+        noted.style.display = 'none';
+        tique.style.display = 'block';
     }
     
+    var displayNoted = function(event) {
+        tique.style.display = 'none';
+        noted.style.display = 'block';
+    }
     
-//    var aboutMeLink = function(){
-//        var aboutMe = document.getElementById('about-me-id');
-//        var pos = 0;
-//        pos += aboutMe.offsetTop - aboutMe.scrollTop + aboutMe.clientTop;
-//        
-//        window.scrollTo(0, pos);
-//    };
-//    
-//    Li2.addEventListener('click',aboutMeLink,false);
+    tiqueLink.addEventListener('click',displayTique,false);
+    notedLink.addEventListener('click',displayNoted,false);
             
 };
 

@@ -80,7 +80,7 @@
 /*** End grid ***/
 /*** header ***/
 .background-head {
-    background-color: #d9d9d9;
+    background-color: #FFE2E7;
     margin: 50px 0 0 0;
     padding: 20px 0 75px 0;
     height: auto;
@@ -124,7 +124,7 @@ header div.background-head ul li {
 
 .border {
     height: 10px;
-    background-color: #999;
+    background-color: #809AB7;
     float: right;
 }
 
@@ -133,7 +133,7 @@ header div.background-head ul li {
     height: 610px;
     margin: 50px 0 0 6.866%;
     float: left;
-    background-color: #bfbfbf;
+    background-color: #FFEBA3;
     z-index: -1;
     position: fixed;
 }
@@ -153,8 +153,8 @@ header div.background-head ul li {
     font-size: 1.5em;
     font-weight: 400;
     line-height: 2.25;
-    background-color: grey;
-    color: rgba(0,0,0,10);
+    background-color: #809AB7;
+    color: white;
     padding-left: 5px;
     margin-bottom: 10px;
     -webkit-transition: width 1s;
@@ -180,9 +180,6 @@ p a:hover {
     color: white;
 }
 
-ul li a {
-    color: black;
-}
 
 li:hover {
     cursor: pointer;
@@ -201,7 +198,7 @@ img {
 
 .about-me .title-bar {
     height: 75px;
-    background-color: #d9d9d9;
+    background-color: #FFE2E7;
     margin: 100px 10% 40px 0;;
     float: left;
 }
@@ -228,13 +225,16 @@ img {
 }
 
 .tique {
+    display: block;
+}
+
+.noted {
     display: none;
 }
 
-
 .work .title-bar {
     height: 75px;
-    background-color: #d9d9d9;
+    background-color: #FFE2E7;
     margin-top: 150px;
     float: left;
 }
@@ -257,7 +257,8 @@ img {
     font-size: 1.5em;
     font-weight: 400;
     line-height:2.25;
-    background-color: gray;
+    background-color: #809AB7;
+    color: white;
     padding-left: 2px;
     margin-top: -25px;
     position: relative;
@@ -282,7 +283,7 @@ img {
     font-weight: 500;
     font-size: 1.5em;
     padding-bottom: 5px;
-    border-bottom: solid black 10px;
+    border-bottom: solid #FFE2E7 10px;
 }
 
 .case-study p.quote {
@@ -362,6 +363,19 @@ img {
     text-align: center;
     padding: 30px 0 0 0;
     margin-left: 15%;
+}
+
+.call-to-action {
+    background-color: #FFEBA3;
+    width: 50%;
+    margin: 0 0 20px 16.98%;
+    padding: 10px;
+}
+
+.call-to-action p {
+    width: 100%;
+    margin: 0;
+    font-weight: 400;
 }
 /*** images ***/
 
@@ -491,6 +505,13 @@ img {
         width: 70%;
     }
     
+    .call-to-action {
+        width: 70%;
+    }
+    
+    .call-to-action p {
+        width: 100%;
+    }
     .about-me p {
         width: 70%;
     }
@@ -595,6 +616,16 @@ img {
         margin-left: 15%;
     }
     
+    .call-to-action {
+        width: 85%;
+        margin-left: 15%;
+        padding: 10px 0 10px 0;;
+    }
+    
+    .call-to-action p {
+        width: 90%;
+        margin-left: 5%;
+    }
     .work .title-bar h3 {
         margin-left: 15%;
     }
