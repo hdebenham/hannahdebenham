@@ -97,9 +97,11 @@ var ready = function() {
     
     var tiqueLink = document.getElementById('click-tique');
     var tique = document.getElementsByClassName('tique')[0];
+    var tiqueRelated = document.getElementById('to-tique');
     
     var notedLink = document.getElementById('click-noted');
     var noted = document.getElementsByClassName('noted')[0];
+    var notedRelated = document.getElementById('to-noted');
     
     var displayTique = function(event) {
         noted.style.display = 'none';
@@ -112,8 +114,9 @@ var ready = function() {
     }
     
     tiqueLink.addEventListener('click',displayTique,false);
+    tiqueRelated.addEventListener('click',displayTique,false);
     notedLink.addEventListener('click',displayNoted,false);
-            
+    notedRelated.addEventListener('click',displayNoted,false);
 };
 
 
