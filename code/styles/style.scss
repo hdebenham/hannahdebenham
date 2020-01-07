@@ -1,0 +1,66 @@
+/******* MAIN STYLE SHEET FOR PORTFOLIO ******/
+@import "base/reset";
+@import "base/variables";
+@import "layout/grid";
+@import "layout/layout";
+@import "modules/mixins";
+@import "partials/type";
+@import "partials/_animations";
+
+html {
+    background-color: $white;
+}
+
+a {
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+a:active {
+    transform: scale(0.95);
+}
+
+/***** TOP NAVIGATION *****/
+
+
+/***** WORK *****/
+.work-item > div {
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    h3 {
+        color: $white;
+    }
+    
+    div.description {
+        background-color: $white;
+        border-radius: 0 0 $border-radius $border-radius;
+        p {
+            color: $black;
+        }
+    }
+}
+
+.summit-racing {
+    background-color: #2167bb;
+}
+
+.ams {
+    background-color: #7eb946;
+}
+
+.abercrombie {
+    background-color: #253246;
+}
+
+.healthy-strongsville {
+    background-color: #437f1a;
+}
+
+.tique {
+    background-color: #b8979f;
+}
+
+.noted {
+    background-color: #f25e38;
+}

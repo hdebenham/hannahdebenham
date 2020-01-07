@@ -1,0 +1,74 @@
+/***** 12 COLUMN GRID *****/
+
+$gutter: 3%;
+
+%clearfix:after {
+    display: block;
+    clear: both;
+    content:'';
+}
+
+.row {
+    @extend %clearfix;
+    
+    & + & {
+        margin-top: $gutter;
+    }
+}
+
+[class^="col-"] {
+    float: left;
+    margin-right: $gutter;
+    
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.col-1 {
+    width: (100% / 12) - ($gutter * 11 / 12);
+}
+
+.col-2 {
+    width: (100% / 6) - ($gutter * 10 / 12);
+}
+
+.col-3 {
+    width: (100% / 4) - ($gutter * 9 / 12);
+}
+
+.col-4 {
+    width: (100% / 3) - ($gutter * 8 / 12);
+}
+
+.col-5 {
+    width: (100% / 2.4) - ($gutter * 7 / 12);
+}
+
+.col-6 {
+    width: (100% / 2) - ($gutter * 6 / 12);
+}
+
+.col-7 {
+    width: (100% / 1.714285714285714) - ($gutter * 5 / 12);
+}
+
+.col-8 {
+    width: (100% / 1.5) - ($gutter * 4 / 12);
+}
+
+.col-9 {
+    width: (100% / 1.333333333333333) - ($gutter * 3 / 12);
+}
+
+.col-10 {
+    width: (100% / 1.2) - ($gutter * 2 / 12);
+}
+
+.col-11 {
+    width: (100% / 1.090909090909091) - ($gutter * 1 / 12);
+}
+
+.col-12 {
+    width: 100%;
+}

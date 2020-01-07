@@ -1,0 +1,28 @@
+/***** GOOGLE FONTS: ARIMO & RALEWAY
+       RALEWAY FOR H1
+       ARIMO FOR OTHER HEADERS AND BODY COPY
+*****/
+
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700|Raleway:700&display=swap');
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h2,h3,h4,h5,h6 {
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+
+p,a {
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400;
+    font-size: .8rem;
+}

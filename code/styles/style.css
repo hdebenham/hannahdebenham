@@ -1,0 +1,253 @@
+/******* MAIN STYLE SHEET FOR PORTFOLIO ******/
+@import url("https://fonts.googleapis.com/css?family=Arimo:400,700|Raleway:700&display=swap");
+/* line 1, /Users/hannahdebenham/Code/Portfolio/code/styles/base/_reset.scss */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* line 7, /Users/hannahdebenham/Code/Portfolio/code/styles/base/_reset.scss */
+html {
+  font-size: 16px; }
+
+/* line 11, /Users/hannahdebenham/Code/Portfolio/code/styles/base/_reset.scss */
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+/* line 16, /Users/hannahdebenham/Code/Portfolio/code/styles/base/_reset.scss */
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer; }
+
+/* line 24, /Users/hannahdebenham/Code/Portfolio/code/styles/base/_reset.scss */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* line 30, /Users/hannahdebenham/Code/Portfolio/code/styles/base/_reset.scss */
+li {
+  text-decoration: none; }
+
+/* line 34, /Users/hannahdebenham/Code/Portfolio/code/styles/base/_reset.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit; }
+
+/* line 40, /Users/hannahdebenham/Code/Portfolio/code/styles/base/_reset.scss */
+h3 {
+  font-size: 1.2em; }
+
+/* line 44, /Users/hannahdebenham/Code/Portfolio/code/styles/base/_reset.scss */
+p {
+  margin: 0; }
+
+/***** VARIABLES *****/
+/***** COLORS *****/
+/***** 12 COLUMN GRID *****/
+/* line 5, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_grid.scss */
+.row:after {
+  display: block;
+  clear: both;
+  content: ''; }
+
+/* line 14, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_grid.scss */
+.row + .row {
+  margin-top: 3%; }
+
+/* line 19, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_grid.scss */
+[class^="col-"] {
+  float: left;
+  margin-right: 3%; }
+  /* line 23, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_grid.scss */
+  [class^="col-"]:last-child {
+    margin-right: 0; }
+
+/* line 28, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_grid.scss */
+.col-1 {
+  width: 5.58333%; }
+
+/* line 32, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_grid.scss */
+.col-2 {
+  width: 14.16667%; }
+
+/* line 36, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_grid.scss */
+.col-3 {
+  width: 22.75%; }
+
+/* line 40, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_grid.scss */
+.col-4 {
+  width: 31.33333%; }
+
+/* line 44, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_grid.scss */
+.col-5 {
+  width: 39.91667%; }
+
+/* line 48, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_grid.scss */
+.col-6 {
+  width: 48.5%; }
+
+/* line 52, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_grid.scss */
+.col-7 {
+  width: 57.08333%; }
+
+/* line 56, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_grid.scss */
+.col-8 {
+  width: 65.66667%; }
+
+/* line 60, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_grid.scss */
+.col-9 {
+  width: 74.25%; }
+
+/* line 64, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_grid.scss */
+.col-10 {
+  width: 82.83333%; }
+
+/* line 68, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_grid.scss */
+.col-11 {
+  width: 91.41667%; }
+
+/* line 72, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_grid.scss */
+.col-12 {
+  width: 100%; }
+
+/***** BASIC LAYOUT STYLES *****/
+/***** TOP NAVIGATION *****/
+/* line 5, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+ul.nav-wrap {
+  display: flex;
+  justify-content: space-between; }
+  /* line 9, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+  ul.nav-wrap ul {
+    display: flex;
+    justify-content: flex-end; }
+    /* line 13, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+    ul.nav-wrap ul li {
+      margin-left: .8rem; }
+
+/***** WORK *****/
+/* line 22, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+div.work-wrap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1.5rem; }
+  /* line 28, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+  div.work-wrap .work-item {
+    margin: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 30%; }
+    /* line 36, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+    div.work-wrap .work-item div {
+      width: 100%; }
+    /* line 40, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+    div.work-wrap .work-item h3 {
+      margin: 4em 0;
+      text-align: center; }
+    /* line 45, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+    div.work-wrap .work-item div.description {
+      padding: .5em;
+      justify-self: flex-end; }
+
+/***** MEDIA QUERIES *****/
+/***** GOOGLE FONTS: ARIMO & RALEWAY
+       RALEWAY FOR H1
+       ARIMO FOR OTHER HEADERS AND BODY COPY
+*****/
+/* line 8, /Users/hannahdebenham/Code/Portfolio/code/styles/partials/_type.scss */
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+/* line 14, /Users/hannahdebenham/Code/Portfolio/code/styles/partials/_type.scss */
+h2, h3, h4, h5, h6 {
+  font-family: 'Arimo', sans-serif;
+  font-weight: 700; }
+
+/* line 19, /Users/hannahdebenham/Code/Portfolio/code/styles/partials/_type.scss */
+h3 {
+  font-size: 1.2em; }
+
+/* line 24, /Users/hannahdebenham/Code/Portfolio/code/styles/partials/_type.scss */
+p, a {
+  font-family: 'Arimo', sans-serif;
+  font-weight: 400;
+  font-size: .8rem; }
+
+/***** VARIABLES *****/
+/***** COLORS *****/
+/***** CSS ANIMATIONS *****/
+/***** SHRINK *****/
+@keyframes shrink {
+  0% {
+    width: 100%; }
+  50% {
+    width: 80%; }
+  100% {
+    width: 100%; } }
+
+/* line 10, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+html {
+  background-color: #f9f9f9; }
+
+/* line 14, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+a {
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: transform; }
+
+/* line 20, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+a:active {
+  transform: scale(0.95); }
+
+/***** TOP NAVIGATION *****/
+/***** WORK *****/
+/* line 28, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+.work-item > div {
+  border-radius: 2px;
+  box-shadow: 0px 5px 12px -4px rgba(34, 34, 34, 0.47); }
+  /* line 31, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+  .work-item > div h3 {
+    color: #f9f9f9; }
+  /* line 35, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+  .work-item > div div.description {
+    background-color: #f9f9f9;
+    border-radius: 0 0 2px 2px; }
+    /* line 38, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+    .work-item > div div.description p {
+      color: #222222; }
+
+/* line 44, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+.summit-racing {
+  background-color: #2167bb; }
+
+/* line 48, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+.ams {
+  background-color: #7eb946; }
+
+/* line 52, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+.abercrombie {
+  background-color: #253246; }
+
+/* line 56, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+.healthy-strongsville {
+  background-color: #437f1a; }
+
+/* line 60, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+.tique {
+  background-color: #b8979f; }
+
+/* line 64, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+.noted {
+  background-color: #f25e38; }
+
+/*# sourceMappingURL=style.css.map */

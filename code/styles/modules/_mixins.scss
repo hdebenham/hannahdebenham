@@ -1,0 +1,51 @@
+/***** MEDIA QUERIES *****/
+@mixin media-size($size) {
+    @if $size == small {
+        @media (min-width: 576px) {
+            @content;
+        }
+    }
+    
+    @if $size == medium {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+    
+    @if $size == large {
+        @media (min-width: 992px) {
+            @content;
+        }
+    }
+    
+    @if $size == x-large {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+    
+    @if $size == x-small-only {
+        @media (max-width: 575.99px) {
+            @content;
+        }
+    }
+    
+    @if $size == small-only {
+        @media (min-width: 576px) and (max-width: 767.99px) {
+            @content;
+        }
+    }
+    
+    @if $size == medium-only {
+        @media (min-width: 768px) and (max-width: 991.99px) {
+            @content;
+        }
+    }
+    
+    @if $size == large-only {
+        @media (min-width: 992px) and (max-width: 1199.99px) {
+            @content;
+        }
+    }
+    
+}

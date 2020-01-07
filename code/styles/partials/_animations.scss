@@ -1,0 +1,11 @@
+@import "../base/variables";
+/***** CSS ANIMATIONS *****/
+
+
+/***** SHRINK *****/
+
+@keyframes shrink {
+    0%   {width: 100%;}
+    50%  {width: 80%;}  
+    100% {width: 100%;}
+}

@@ -1,0 +1,50 @@
+/***** BASIC LAYOUT STYLES *****/
+
+/***** TOP NAVIGATION *****/
+
+ul.nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        
+        li {
+            margin-left:.8rem;
+        }
+    }
+}
+
+
+/***** WORK *****/
+
+div.work-wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    
+    .work-item {
+        margin: .8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 30%;
+        
+        div {
+            width: 100%;
+        }
+        
+        h3 {
+            margin: 4em 0;
+            text-align: center;
+        }
+        
+        div.description {
+            padding: .5em;
+            justify-self: flex-end;
+        }
+    }
+}
