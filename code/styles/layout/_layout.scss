@@ -5,13 +5,14 @@
 ul.nav-wrap {
     display: flex;
     justify-content: space-between;
+    padding: 1.5rem;
     
     ul {
         display: flex;
         justify-content: flex-end;
         
         li {
-            margin-left:.8rem;
+            margin-left: 1.5rem;
         }
     }
 }

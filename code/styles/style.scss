@@ -6,6 +6,7 @@
 @import "modules/mixins";
 @import "partials/type";
 @import "partials/_animations";
+@import "modules/modals";
 
 html {
     background-color: $white;
@@ -42,25 +43,25 @@ a:active {
 }
 
 .summit-racing {
-    background-color: #2167bb;
+    background-color: $sre;
 }
 
 .ams {
-    background-color: #7eb946;
+    background-color: $ams;
 }
 
 .abercrombie {
-    background-color: #253246;
+    background-color: $anf;
 }
 
 .healthy-strongsville {
-    background-color: #437f1a;
+    background-color: $hstr;
 }
 
 .tique {
-    background-color: #b8979f;
+    background-color: $tique;
 }
 
 .noted {
-    background-color: #f25e38;
+    background-color: $noted;
 }

@@ -40,10 +40,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit; }
 
 /* line 40, /Users/hannahdebenham/Code/Portfolio/code/styles/base/_reset.scss */
-h3 {
-  font-size: 1.2em; }
-
-/* line 44, /Users/hannahdebenham/Code/Portfolio/code/styles/base/_reset.scss */
 p {
   margin: 0; }
 
@@ -121,23 +117,24 @@ p {
 /* line 5, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
 ul.nav-wrap {
   display: flex;
-  justify-content: space-between; }
-  /* line 9, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+  justify-content: space-between;
+  padding: 1.5rem; }
+  /* line 10, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
   ul.nav-wrap ul {
     display: flex;
     justify-content: flex-end; }
-    /* line 13, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+    /* line 14, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
     ul.nav-wrap ul li {
-      margin-left: .8rem; }
+      margin-left: 1.5rem; }
 
 /***** WORK *****/
-/* line 22, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+/* line 23, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
 div.work-wrap {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 1.5rem; }
-  /* line 28, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+  /* line 29, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
   div.work-wrap .work-item {
     margin: .8rem;
     display: flex;
@@ -145,14 +142,14 @@ div.work-wrap {
     justify-content: center;
     align-items: center;
     flex: 1 1 30%; }
-    /* line 36, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+    /* line 37, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
     div.work-wrap .work-item div {
       width: 100%; }
-    /* line 40, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+    /* line 41, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
     div.work-wrap .work-item h3 {
       margin: 4em 0;
       text-align: center; }
-    /* line 45, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+    /* line 46, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
     div.work-wrap .work-item div.description {
       padding: .5em;
       justify-self: flex-end; }
@@ -195,58 +192,143 @@ p, a {
   100% {
     width: 100%; } }
 
-/* line 10, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+/***** STYLESHEET FOR WORK MODALS *****/
+/***** VARIABLES *****/
+/***** COLORS *****/
+/* line 4, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+.work-modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow: auto;
+  background: #222222;
+  background: rgba(32, 32, 32, 0.8); }
+
+/* line 16, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+.modal-content {
+  width: 90%;
+  margin: 5% auto;
+  background-color: #f9f9f9;
+  border-radius: 2px; }
+  /* line 22, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+  .modal-content .modal-head {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    padding: 1.2rem; }
+    /* line 28, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+    .modal-content .modal-head h1 {
+      position: absolute;
+      color: #f9f9f9; }
+  /* line 35, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+  .modal-content .modal-body {
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: center; }
+    /* line 41, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+    .modal-content .modal-body .work-description {
+      max-width: 400px;
+      padding-right: 1.2rem; }
+      /* line 44, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+      .modal-content .modal-body .work-description h3 {
+        color: #222222;
+        padding-bottom: 5px;
+        border-bottom: 3px solid #222222;
+        margin-bottom: 20px; }
+      /* line 50, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+      .modal-content .modal-body .work-description p {
+        margin-bottom: 10px;
+        font-size: .7rem;
+        line-height: .9rem; }
+      /* line 55, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+      .modal-content .modal-body .work-description p.footnote {
+        font-size: .6rem; }
+    /* line 61, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+    .modal-content .modal-body .img-desktop, .modal-content .modal-body .img-mobile {
+      max-height: 500px;
+      border-radius: 2px;
+      overflow-y: scroll; }
+      /* line 66, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+      .modal-content .modal-body .img-desktop img, .modal-content .modal-body .img-mobile img {
+        width: 100%; }
+    /* line 71, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+    .modal-content .modal-body .img-desktop {
+      width: 50%; }
+    /* line 75, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+    .modal-content .modal-body .img-mobile {
+      width: 30%; }
+
+/* line 81, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+/* line 91, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+#sre-modal .modal-head {
+  background-color: #2167bb; }
+  /* line 94, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+  #sre-modal .modal-head h1 {
+    bottom: -20px;
+    font-size: 5em; }
+
+/* line 11, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
 html {
   background-color: #f9f9f9; }
 
-/* line 14, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+/* line 15, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
 a {
   transform: perspective(1px) translateZ(0);
   transition-duration: 0.3s;
   transition-property: transform; }
 
-/* line 20, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+/* line 21, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
 a:active {
   transform: scale(0.95); }
 
 /***** TOP NAVIGATION *****/
 /***** WORK *****/
-/* line 28, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+/* line 29, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
 .work-item > div {
   border-radius: 2px;
   box-shadow: 0px 5px 12px -4px rgba(34, 34, 34, 0.47); }
-  /* line 31, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+  /* line 32, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
   .work-item > div h3 {
     color: #f9f9f9; }
-  /* line 35, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+  /* line 36, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
   .work-item > div div.description {
     background-color: #f9f9f9;
     border-radius: 0 0 2px 2px; }
-    /* line 38, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+    /* line 39, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
     .work-item > div div.description p {
       color: #222222; }
 
-/* line 44, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+/* line 45, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
 .summit-racing {
   background-color: #2167bb; }
 
-/* line 48, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+/* line 49, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
 .ams {
   background-color: #7eb946; }
 
-/* line 52, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+/* line 53, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
 .abercrombie {
   background-color: #253246; }
 
-/* line 56, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+/* line 57, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
 .healthy-strongsville {
   background-color: #437f1a; }
 
-/* line 60, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+/* line 61, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
 .tique {
   background-color: #b8979f; }
 
-/* line 64, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+/* line 65, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
 .noted {
   background-color: #f25e38; }
 
