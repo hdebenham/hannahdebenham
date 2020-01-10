@@ -1,5 +1,6 @@
 /***** STYLESHEET FOR WORK MODALS *****/
 @import "../base/variables";
+@import "mixins";
 
 .work-modal {
     width: 100%;
@@ -35,12 +36,13 @@
     .modal-body {
         padding: 1.2rem;
         display: flex;
-        justify-content: space-between;
-        align-content: center;
+        justify-content: space-around;
+        flex-direction: column-reverse;
         
         .work-description {
-            max-width: 400px;
+            max-width: 100%;
             padding-right: 1.2rem;
+            margin-top: 50px;
             h3 {
                 color: $black;
                 padding-bottom: 5px;
@@ -58,22 +60,8 @@
             
         }
         
-        .img-desktop, .img-mobile {
-            max-height: 500px;
-            border-radius: $border-radius;
-            overflow-y: scroll;
-            
-            img {
-                width: 100%;
-            }
-        }
-        
-        .img-desktop {
-            width: 50%;
-        }
-        
-        .img-mobile {
-            width: 30%;
+        img {
+            width: 100%;
         }
     }
 }
@@ -83,17 +71,80 @@
     float: right;
     font-size: 28px;
     font-weight: bold;
+    cursor: pointer;
 }
 
-#sre-modal {
-    //display:none;
+//SRE MODAL
+#sre-modal, #ams-modal {
+    display:none;
     
     .modal-head {
         background-color: $sre;
         
         h1 {
-            bottom: -20px;
-            font-size: 5em;
+            bottom: -11px;
+            font-size: 3em;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+
+/***** MEDIA QUERIES *****/
+
+/***** MEDIUM *****/
+@include media-size(medium) {
+    .modal-content {
+        
+        .modal-body {
+            justify-content: space-around;
+            align-content: center;
+            flex-direction: row;
+            
+            .work-description {
+                max-width: 300px;
+            }
+            
+            img {
+                max-width: 50%;
+                margin-top: -15%;
+                z-index: 3;
+            }
+            
+        }
+    }
+    
+    //SRE MODAL, AMS MODAL
+    #sre-modal, #ams-modal {
+        .modal-head {
+            h1 {
+                bottom: -20px;
+                font-size: 5em;
+                left:1.2rem;
+                transform: translateX(0);
+            }
+        }
+    }
+}
+
+/***** LARGE *****/
+@include media-size(large) {
+    .modal-content {
+        .modal-body {
+            .work-description {
+                max-width: 400px;
+            }
+        }
+    }
+}
+
+/***** X-SMALL ONLY *****/
+
+@include media-size(x-small-only) {
+    .modal-content {
+        .modal-head {
+            height: 100px;
         }
     }
 }

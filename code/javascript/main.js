@@ -18,5 +18,6 @@ window.onload = function() {
         if(event.target == sreWork) {
             sreWork.style.display = "none";
         }
+        
     }
 }
