@@ -67,30 +67,74 @@
 }
 
 .close {
-    color: #aaa;
+    color: $white;
     float: right;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
 }
 
-//SRE MODAL
-#sre-modal, #ams-modal {
-    display:none;
-    
+/***** BACKGROUND COLORS *****/
+#sre-modal {
     .modal-head {
         background-color: $sre;
+    }
+}
+
+#ams-modal {
+    .modal-head {
+        background-color: $ams;
+    }
+}
+
+#anf-modal {
+    .modal-head {
+        background-color: $anf;
+    }
+}
+
+#hstr-modal {
+    .modal-head {
+        background-color: $hstr;
+    }
+}
+
+#ccdp-modal {
+    .modal-head {
+        background-color: $ccdp;
+    }
+}
+
+#ma-modal {
+    .modal-head {
+        background-color: $ma;
+    }
+}
+
+
+#sre-modal, #ams-modal, #hstr-modal, #ma-modal, #ccdp-modal {
+    display:none;
         
         h1 {
             bottom: -11px;
             font-size: 3em;
             left: 50%;
             transform: translateX(-50%);
+            white-space: nowrap;
         }
-    }
 }
 
-
+#hstr-modal, #anf-modal {
+    display:none;
+        
+        h1 {
+            bottom: -7px;
+            font-size: 2em;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+        }
+}
 /***** MEDIA QUERIES *****/
 
 /***** MEDIUM *****/
@@ -115,13 +159,31 @@
         }
     }
     
-    //SRE MODAL, AMS MODAL
-    #sre-modal, #ams-modal {
+    //MA MODAL IMG ONLY 
+    #ma-modal, #hstr-modal {
+        img {
+            margin-top: 0;
+        }
+    }
+    
+    //SRE MODAL, AMS MODAL, CCDP MODAL
+    #sre-modal, #ams-modal, #ccdp-modal, #ma-modal {
         .modal-head {
             h1 {
                 bottom: -20px;
                 font-size: 5em;
                 left:1.2rem;
+                transform: translateX(0);
+            }
+        }
+    }
+    
+    #anf-modal, #hstr-modal {
+        .modal-head {
+            h1 {
+                bottom:-10px;
+                font-size: 2.7em;
+                left: 1.2rem;
                 transform: translateX(0);
             }
         }
@@ -137,6 +199,18 @@
             }
         }
     }
+    
+    #anf-modal, #hstr-modal {
+        .modal-head {
+            h1 {
+                bottom:-13px;
+                font-size: 3.5em;
+                left: 1.2rem;
+                transform: translateX(0);
+            }
+        }
+    }
+    
 }
 
 /***** X-SMALL ONLY *****/

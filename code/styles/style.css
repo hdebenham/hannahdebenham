@@ -127,14 +127,19 @@ ul.nav-wrap {
     ul.nav-wrap ul li {
       margin-left: 1.5rem; }
 
+/***** INTRO *****/
+/* line 21, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+.intro {
+  text-align: center; }
+
 /***** WORK *****/
-/* line 23, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+/* line 27, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
 div.work-wrap {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 1.5rem; }
-  /* line 29, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+  /* line 33, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
   div.work-wrap .work-item {
     margin: .8rem;
     display: flex;
@@ -142,14 +147,14 @@ div.work-wrap {
     justify-content: center;
     align-items: center;
     flex: 1 1 30%; }
-    /* line 37, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+    /* line 41, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
     div.work-wrap .work-item div {
       width: 100%; }
-    /* line 41, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+    /* line 45, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
     div.work-wrap .work-item h3 {
       margin: 4em 0;
       text-align: center; }
-    /* line 46, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+    /* line 50, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
     div.work-wrap .work-item div.description {
       padding: .5em;
       justify-self: flex-end; }
@@ -183,15 +188,6 @@ p, a {
 /***** VARIABLES *****/
 /***** COLORS *****/
 /***** CSS ANIMATIONS *****/
-/***** SHRINK *****/
-@keyframes shrink {
-  0% {
-    width: 100%; }
-  50% {
-    width: 80%; }
-  100% {
-    width: 100%; } }
-
 /***** STYLESHEET FOR WORK MODALS *****/
 /***** VARIABLES *****/
 /***** COLORS *****/
@@ -255,57 +251,106 @@ p, a {
 
 /* line 69, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
 .close {
-  color: #aaa;
+  color: #f9f9f9;
   float: right;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer; }
 
-/* line 78, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
-#sre-modal, #ams-modal {
+/***** BACKGROUND COLORS *****/
+/* line 79, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+#sre-modal .modal-head {
+  background-color: #2167bb; }
+
+/* line 85, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+#ams-modal .modal-head {
+  background-color: #7eb946; }
+
+/* line 91, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+#anf-modal .modal-head {
+  background-color: #253246; }
+
+/* line 97, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+#hstr-modal .modal-head {
+  background-color: #437f1a; }
+
+/* line 103, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+#ccdp-modal .modal-head {
+  background-color: #2378ba; }
+
+/* line 109, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+#ma-modal .modal-head {
+  background-color: #80bb41; }
+
+/* line 115, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+#sre-modal, #ams-modal, #hstr-modal, #ma-modal, #ccdp-modal {
   display: none; }
-  /* line 81, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
-  #sre-modal .modal-head, #ams-modal .modal-head {
-    background-color: #2167bb; }
-    /* line 84, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
-    #sre-modal .modal-head h1, #ams-modal .modal-head h1 {
-      bottom: -11px;
-      font-size: 3em;
-      left: 50%;
-      transform: translateX(-50%); }
+  /* line 118, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+  #sre-modal h1, #ams-modal h1, #hstr-modal h1, #ma-modal h1, #ccdp-modal h1 {
+    bottom: -11px;
+    font-size: 3em;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; }
+
+/* line 127, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+#hstr-modal, #anf-modal {
+  display: none; }
+  /* line 130, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+  #hstr-modal h1, #anf-modal h1 {
+    bottom: -7px;
+    font-size: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; }
 
 /***** MEDIA QUERIES *****/
 /***** MEDIUM *****/
 @media (min-width: 768px) {
-  /* line 100, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+  /* line 144, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
   .modal-content .modal-body {
     justify-content: space-around;
     align-content: center;
     flex-direction: row; }
-    /* line 105, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+    /* line 149, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
     .modal-content .modal-body .work-description {
       max-width: 300px; }
-    /* line 109, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+    /* line 153, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
     .modal-content .modal-body img {
       max-width: 50%;
       margin-top: -15%;
       z-index: 3; }
-  /* line 121, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
-  #sre-modal .modal-head h1, #ams-modal .modal-head h1 {
+  /* line 164, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+  #ma-modal img, #hstr-modal img {
+    margin-top: 0; }
+  /* line 172, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+  #sre-modal .modal-head h1, #ams-modal .modal-head h1, #ccdp-modal .modal-head h1, #ma-modal .modal-head h1 {
     bottom: -20px;
     font-size: 5em;
+    left: 1.2rem;
+    transform: translateX(0); }
+  /* line 183, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+  #anf-modal .modal-head h1, #hstr-modal .modal-head h1 {
+    bottom: -10px;
+    font-size: 2.7em;
     left: 1.2rem;
     transform: translateX(0); } }
 
 /***** LARGE *****/
 @media (min-width: 992px) {
-  /* line 135, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+  /* line 197, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
   .modal-content .modal-body .work-description {
-    max-width: 400px; } }
+    max-width: 400px; }
+  /* line 205, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+  #anf-modal .modal-head h1, #hstr-modal .modal-head h1 {
+    bottom: -13px;
+    font-size: 3.5em;
+    left: 1.2rem;
+    transform: translateX(0); } }
 
 /***** X-SMALL ONLY *****/
 @media (max-width: 575.99px) {
-  /* line 146, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
+  /* line 220, /Users/hannahdebenham/Code/Portfolio/code/styles/modules/_modals.scss */
   .modal-content .modal-head {
     height: 100px; } }
 
@@ -320,48 +365,62 @@ a {
   transition-property: transform; }
 
 /* line 21, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+a:after {
+  display: block;
+  content: '';
+  border-bottom: 1px solid blue;
+  border-radius: 0 0 2px 2px;
+  transform: scaleX(0);
+  transition-property: transform;
+  transition-duration: .25s; }
+
+/* line 32, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+a:hover:after {
+  transform: scaleX(1); }
+
+/* line 37, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
 a:active {
   transform: scale(0.95); }
 
 /***** TOP NAVIGATION *****/
 /***** WORK *****/
-/* line 29, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+/* line 45, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
 .work-item > div {
   border-radius: 2px;
   box-shadow: 0px 5px 12px -4px rgba(34, 34, 34, 0.47); }
-  /* line 32, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+  /* line 48, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
   .work-item > div h3 {
     color: #f9f9f9; }
-  /* line 36, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+  /* line 52, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
   .work-item > div div.description {
     background-color: #f9f9f9;
     border-radius: 0 0 2px 2px; }
-    /* line 39, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+    /* line 55, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
     .work-item > div div.description p {
       color: #222222; }
 
-/* line 45, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+/* line 61, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
 .summit-racing {
   background-color: #2167bb; }
 
-/* line 49, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+/* line 65, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
 .ams {
   background-color: #7eb946; }
 
-/* line 53, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+/* line 69, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
 .abercrombie {
   background-color: #253246; }
 
-/* line 57, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+/* line 73, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
 .healthy-strongsville {
   background-color: #437f1a; }
 
-/* line 61, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
-.tique {
-  background-color: #b8979f; }
+/* line 77, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+.mike-albert {
+  background-color: #80bb41; }
 
-/* line 65, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
-.noted {
-  background-color: #f25e38; }
+/* line 81, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+.ccdp {
+  background-color: #2378ba; }
 
 /*# sourceMappingURL=style.css.map */
