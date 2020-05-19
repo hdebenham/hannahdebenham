@@ -10,32 +10,15 @@
 
 html {
     background-color: $white;
+    //background-image: linear-gradient(rgba(84, 155, 135, 0.1), $white);
 }
 
 a {
-    transform: perspective(1px) translateZ(0);
-    transition-duration: 0.3s;
-    transition-property: transform;
+    color: $grey;
 }
 
-a:after {
-    display:block;
-    content: '';
-    border-bottom: 1px solid blue;
-    border-radius: 0 0 $border-radius $border-radius;
-    transform: scaleX(0);  
-    transition-property: transform;
-    transition-duration: .25s;
-}
-
-
-a:hover:after {
-    transform: scaleX(1);
-}
-
-
-a:active {
-    transform: scale(0.95);
+a:hover {
+    color: #716f90;
 }
 
 /***** TOP NAVIGATION *****/

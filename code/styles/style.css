@@ -112,34 +112,48 @@ p {
 .col-12 {
   width: 100%; }
 
+/***** MEDIA QUERIES *****/
 /***** BASIC LAYOUT STYLES *****/
 /***** TOP NAVIGATION *****/
-/* line 5, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+/* line 6, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
 ul.nav-wrap {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem; }
-  /* line 10, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+  /* line 11, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
   ul.nav-wrap ul {
     display: flex;
     justify-content: flex-end; }
-    /* line 14, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+    /* line 15, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
     ul.nav-wrap ul li {
       margin-left: 1.5rem; }
 
 /***** INTRO *****/
-/* line 21, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+/* line 22, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
 .intro {
+  padding-top: 50px;
   text-align: center; }
+  /* line 26, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+  .intro svg, .intro img {
+    max-width: 100px;
+    margin-bottom: 20px; }
+  /* line 31, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+  .intro p {
+    max-width: 80%;
+    margin: 20px auto; }
+  @media (min-width: 992px) {
+    /* line 37, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+    .intro p {
+      max-width: 40%; } }
 
 /***** WORK *****/
-/* line 27, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+/* line 45, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
 div.work-wrap {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 1.5rem; }
-  /* line 33, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+  /* line 51, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
   div.work-wrap .work-item {
     margin: .8rem;
     display: flex;
@@ -147,14 +161,14 @@ div.work-wrap {
     justify-content: center;
     align-items: center;
     flex: 1 1 30%; }
-    /* line 41, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+    /* line 59, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
     div.work-wrap .work-item div {
       width: 100%; }
-    /* line 45, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+    /* line 63, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
     div.work-wrap .work-item h3 {
       margin: 4em 0;
       text-align: center; }
-    /* line 50, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
+    /* line 68, /Users/hannahdebenham/Code/Portfolio/code/styles/layout/_layout.scss */
     div.work-wrap .work-item div.description {
       padding: .5em;
       justify-self: flex-end; }
@@ -358,68 +372,52 @@ p, a {
 html {
   background-color: #f9f9f9; }
 
-/* line 15, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+/* line 16, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
 a {
-  transform: perspective(1px) translateZ(0);
-  transition-duration: 0.3s;
-  transition-property: transform; }
+  color: #444356; }
 
-/* line 21, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
-a:after {
-  display: block;
-  content: '';
-  border-bottom: 1px solid blue;
-  border-radius: 0 0 2px 2px;
-  transform: scaleX(0);
-  transition-property: transform;
-  transition-duration: .25s; }
-
-/* line 32, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
-a:hover:after {
-  transform: scaleX(1); }
-
-/* line 37, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
-a:active {
-  transform: scale(0.95); }
+/* line 20, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+a:hover {
+  color: #716f90; }
 
 /***** TOP NAVIGATION *****/
 /***** WORK *****/
-/* line 45, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+/* line 28, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
 .work-item > div {
   border-radius: 2px;
   box-shadow: 0px 5px 12px -4px rgba(34, 34, 34, 0.47); }
-  /* line 48, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+  /* line 31, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
   .work-item > div h3 {
     color: #f9f9f9; }
-  /* line 52, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+  /* line 35, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
   .work-item > div div.description {
     background-color: #f9f9f9;
     border-radius: 0 0 2px 2px; }
-    /* line 55, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+    /* line 38, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
     .work-item > div div.description p {
       color: #222222; }
 
-/* line 61, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+/* line 44, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
 .summit-racing {
   background-color: #2167bb; }
 
-/* line 65, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+/* line 48, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
 .ams {
   background-color: #7eb946; }
 
-/* line 69, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+/* line 52, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
 .abercrombie {
   background-color: #253246; }
 
-/* line 73, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+/* line 56, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
 .healthy-strongsville {
   background-color: #437f1a; }
 
-/* line 77, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+/* line 60, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
 .mike-albert {
   background-color: #80bb41; }
 
-/* line 81, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
+/* line 64, /Users/hannahdebenham/Code/Portfolio/code/styles/style.scss */
 .ccdp {
   background-color: #2378ba; }
 

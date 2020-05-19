@@ -1,3 +1,4 @@
+@import "../modules/mixins";
 /***** BASIC LAYOUT STYLES *****/
 
 /***** TOP NAVIGATION *****/
@@ -19,7 +20,24 @@ ul.nav-wrap {
 
 /***** INTRO *****/
 .intro {
+    padding-top: 50px;
     text-align: center;
+    
+    svg, img{
+        max-width: 100px;
+        margin-bottom: 20px;
+    }
+    
+    p {
+        max-width: 80%;
+        margin: 20px auto;
+    }
+    
+    @include media-size(large){
+        p {
+            max-width: 40%;
+        }
+    }
 }
 
 /***** WORK *****/
